@@ -13,13 +13,14 @@ body{
 
 }
 .content{
-    position: absolute;
+    position: relative;
     top: 30vh;
-    left:30vw;
+    margin-left: auto;
+    margin-right: auto;
     background: #FFFFFF;
     border-radius: 16px;
-    width: 40vw;
-    height: 27vh;
+    width: 747px;
+    height: 257px;
 }
 .content-title{
     margin-top: 40px;
@@ -31,7 +32,6 @@ body{
     line-height: 36px;
     text-align: center;
     color: #283352;
-    /* margin: 32px 0px; */
 }
 .content-place{
     position: relative;
@@ -79,11 +79,10 @@ body{
 .search_recommend{
     display: none;
     background-color: #FFFFFF;
-    position: relative;
-    top: 53vh;
-    height: 10vh;
-    width: 35vw;
-    left: 32vw;
+    position: absolute;
+    margin-left: 49px;
+    width: 649px;
+    height: 84px;
     border-radius: 0px 0px 16px 16px;
 }
 .recommend_content{
