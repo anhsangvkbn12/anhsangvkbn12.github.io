@@ -1,0 +1,113 @@
+@import url('http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900');
+
+*{
+    font-family: "Roboto", sans-serif;}
+body{
+    overflow: hidden;
+}
+.bg-home{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/static/images/home/bg-home.jpg');
+
+}
+.content{
+    position: absolute;
+    top: 30vh;
+    left:30vw;
+    background: #FFFFFF;
+    border-radius: 16px;
+    width: 40vw;
+    height: 27vh;
+}
+.content-title{
+    margin-top: 40px;
+    position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    color: #283352;
+    /* margin: 32px 0px; */
+}
+.content-place{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 48px;
+    height: 32px;
+    margin-top: 32px;
+}
+.place-title{
+    cursor: pointer;
+    position: relative;
+    color: #283352;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 20px;
+}
+.place-title:hover{
+    color: #E23C47;
+}
+.home-btn-next{
+    cursor: pointer;
+    position: relative;
+    margin-left: 32px;
+}
+#input_search{
+    border:none;
+    width: 80%;
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    outline: none;
+}
+#search_btn{
+    fill:#7988A4;
+}
+#input_search:focus::placeholder {
+    color: transparent;
+}
+.search_recommend{
+    display: none;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 53vh;
+    height: 10vh;
+    width: 35vw;
+    left: 32vw;
+    border-radius: 0px 0px 16px 16px;
+}
+.recommend_content{
+    padding-top:32px;
+    margin-bottom: 16px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+}
+.content-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    margin-left:6px;
+    margin-right: 6px;
+    background: #F3F5F9;
+    border-radius: 100px;
+    height: 36px;
+
+}
+.recommend_text{
+    cursor: pointer;
+    text-align: center;
+    padding-right: 16px;
+    padding-left: 16px;
+}
