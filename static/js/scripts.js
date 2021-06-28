@@ -21,27 +21,9 @@ var parallaxInstance = new Parallax(scene, {
 
 var runIntro = function() {
     intro = $('#intro');
-
-    intro.find('.rocket').css({ top: '90%', opacity: 0 });
-    intro.find('.rocket').animate({ top: '40%', opacity: 1 }, 600, 'easeOutBack');
-
     // time to fly-out
     setTimeout(function() {
-        console.log('intro run');
-
-        // rocket effect
-        intro.find('.rocket').animate({ top: '-20%' }, 1000, 'easeInBack');
-
-        //clouds effect
-        intro.find('.cloud').each(function() {
-            var leftAni = $(this).data('left');
-            var rightAni = $(this).data('right');
-            var rndTime = Math.floor(Math.random() * 1000);
-            console.log(rndTime + '/' + leftAni + '/' + rightAni);
-
-            $(this).delay(600).animate({ bottom: '-50%', left: leftAni, right: rightAni }, rndTime);
-        });
-
+  
         // intro effect
         intro.delay(700).animate({ opacity: '0', marginTop: '0%' }, 800, function() {
             // hide intro

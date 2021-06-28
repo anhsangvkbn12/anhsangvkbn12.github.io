@@ -2,7 +2,7 @@
 <!-- index2.jsp -->
 
 <head>
-    <title>Demo</title>
+    <title>Bản đồ PTIT</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,34 +19,121 @@
 </head>
 
 <body>
-    <div id="loader" class="alCenter" style="display: none;">
-        <p><img src="static/images/loader.gif?v=1.2" width="96"></p>
-        <p>Đang tải dữ liệu...</p>
-    </div>
-    <div id="web" style="display: block;">
-        <main>
-            <div class="prlx-ctn" id="prlx">
-                <div id="scene" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; position: relative;">
-                    <div data-depth-x="0.5" data-depth-y="0.3" class="layer city" style="transform: translate3d(-44.1px, -12.8px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
-                        <div class="over people btnFile" style="margin-top:7vh;margin-left:-17vw">
-                            <div class="effect" style="display: none;">
-                                <span></span><span></span>
-                            </div>
-                            <img id="a1_img" src="./static/images/map/a1.png" alt="">
-                        </div>
-                        <div class="bg">
-                            <img src="./static/images/map/bg-map.png">
-                        </div>
-
-
-                    </div>
+  <div id="loader" class="alCenter" style="display: none;">
+      <p><img src="static/images/loader.gif?v=1.2" width="96"></p>
+      <p>Đang tải dữ liệu...</p>
+  </div>
+  <div id="web" style="display: block;">
+    <img src="./static/images/map/logo.png" alt="" id="logo_map">
+    <main>
+      <div class="prlx-ctn" id="prlx">
+        <div id="scene" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; position: relative;">
+          <div data-depth-x="0.5" data-depth-y="0.3" class="layer city" style="transform: translate3d(-44.1px, -12.8px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+            <div class="over people btnFile" style="margin-top:7vh;margin-left:-18vw;z-index: 12;">
+                <div class="typewriter" style="margin-top:-10%;margin-left:48%">
+                    <h4>Tòa nhà A1</h4>
                 </div>
-        </main>
-        <div class="overlay"></div>
+                <div class="pop" style="margin-top:0%;margin-left:43%">
+                    <img src="./static/images/map/icon_place.png" alt="">
+                </div>
+                <div class="effect" style="display: none;">
+                    <div class="effect" style="display: none;">
+                        <span style="margin-top:20%;margin-left: 50%;"></span>
+                        <span style="margin-top:20%;margin-left: 50%;"></span>  
+                    </div>                            </div>
+                <img id="a1_img" src="./static/images/map/a1.png" alt="">
+            </div>
+            <div class="over people btnFile" style="margin-top:-27vh;margin-left:-1vw;z-index: 10;">
+                <div class="typewriter" style="margin-top:-12%;margin-left:69%">
+                    <h4>Tòa nhà A2</h4>
+                </div>
+                <div class="pop" style="margin-top:-3%;margin-left:65%">
+                    <img src="./static/images/map/icon_place.png" alt="">
+                </div>
+                <div class="effect" style="display: none;">
+                    <span style="margin-top:10%;margin-left: 70%;"></span>
+                    <span style="margin-top:10%;margin-left: 70%;"></span>  
+                </div>
+                <img id="a2_img" src="./static/images/map/a2.png" alt="">
+            </div>
+            <div class="over people btnFile" style="margin-top:20.5vh;margin-left:-34vw;z-index: 10;">
+                <div class="typewriter" style="margin-top:-6%;margin-left:52%">
+                    <h4>Nhà xe</h4>
+                </div>
+                <div class="pop" style="margin-top:10%;margin-left:45%">
+                    <img src="./static/images/map/icon_place.png" alt="">
+                </div>
+                <div class="effect" style="display: none;">
+                    <span style="margin-top:29%;margin-left: 54%;"></span>
+                    <span style="margin-top:29%;margin-left: 54%;"></span>
+                </div>
+                <img id="nhaxe" src="./static/images/map/nhaxe.png" alt="">
+            </div>
+            <div class="over people btnFile" style="margin-top:-43vh;margin-left:9vw;z-index: 9;">
+              <div class="typewriter" style="margin-top:-20%;margin-left:52%">
+                  <h4>Tòa nhà A3</h4>
+              </div>
+              <div class="pop" style="margin-top:-5%;margin-left:45%">
+                  <img src="./static/images/map/icon_place.png" alt="">
+              </div>
+              <div class="effect" style="display: none;">
+                  <span style="margin-top:25%;margin-left: 54%;"></span>
+                  <span style="margin-top:25%;margin-left: 54%;"></span>
+              </div>
+              <img id="a3_img" src="./static/images/map/a3.png" alt="">
+            </div>
+
+            <div class="over people btnFile" style="margin-top:-44vh;margin-left:-1.2vw;z-index: 9;">
+              <div class="typewriter" style="margin-top:-15%;margin-left:43%">
+                  <h4>Căn tin Học viện</h4>
+              </div>
+              <div class="pop" style="margin-top:15%;margin-left:30%">
+                  <img src="./static/images/map/icon_place.png" alt="">
+              </div>
+              <div class="effect" style="display: none;">
+                  <span style="margin-top:35%;margin-left: 54%;"></span>
+                  <span style="margin-top:35%;margin-left: 54%;"></span>
+              </div>
+              <img id="cantin" src="./static/images/map/cantin.png" alt="">
+            </div>
+            <div class="over people btnFile" style="margin-top:-6.5vh;margin-left:-16vw;z-index: 10;">
+              <div class="typewriter" style="margin-top:-30%;margin-left:43%">
+                  <h4>Hội trường B1</h4>
+              </div>
+              <div class="pop" style="margin-top:-10%;margin-left:30%">
+                  <img src="./static/images/map/icon_place.png" alt="">
+              </div>
+              <div class="effect" style="display: none;">
+                  <span style="margin-top:35%;margin-left: 54%;"></span>
+                  <span style="margin-top:35%;margin-left: 54%;"></span>
+              </div>
+              <img id="b1_map" src="./static/images/map/b1.png" alt="">
+            </div>
+
+            <div class="over people btnFile" style="margin-top:-30vh;margin-left:-24vw;z-index: 9;">
+              <div class="typewriter" style="margin-top:-8%;margin-left:45%">
+                  <h4>Kí túc xá B5</h4>
+              </div>
+              <div class="pop" style="margin-top:5%;margin-left:40%">
+                  <img src="./static/images/map/icon_place.png" alt="">
+              </div>
+              <div class="effect" style="display: none;">
+                  <span style="margin-top:30%;margin-left: 50%;"></span>
+                  <span style="margin-top:30%;margin-left: 50%;"></span>
+              </div>
+              <img id="b5_map" src="./static/images/map/b5.png" alt="">
+            </div>
+
+
+
+            <div class="bg">
+                <img src="./static/images/map/bg-map.png">
+            </div>
         </div>
-    </div>
-
-
+      </div>
+    </main>
+    <div class="overlay"></div>
+  </div>
 </body>
 <script src="./static/js/jquery.easing.1.3.js "></script>
 <script src="./static/js/parallax.min.js "></script>

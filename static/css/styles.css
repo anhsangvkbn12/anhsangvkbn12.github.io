@@ -726,7 +726,6 @@ footer a:hover {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     animation: 2s infinite aniWave;
-    margin-top: 12px;
 }
 
 .prlx-ctn .over .effect span:last-child {
@@ -735,8 +734,6 @@ footer a:hover {
 
 .prlx-ctn .over .pop {
     position: absolute;
-    margin-top: -96px;
-    margin-left: -36px;
     transform: scale(0);
     transition: all .2s;
     -moz-transition: all .2s;
@@ -752,7 +749,7 @@ footer a:hover {
 }
 
 .prlx-ctn .pop img {
-    width: 64px;
+    width: 48px;
 }
 
 .prlx-ctn .over .info {
@@ -814,10 +811,11 @@ footer a:hover {
 
 .typewriter {
     display: none;
-    margin-top: -130px;
     position: absolute;
     background: rgba(255, 255, 255, 1);
     padding: 10px;
+    width: 175px;
+    text-align: center;
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -1397,13 +1395,45 @@ ul.tabs li.current {
         margin-bottom: 0px;
     }
 }
-/* a1
+/* Tòa nhà + Logo
 -------------------------------------------------- */
+#logo_map{
+    position: fixed;
+    width: 99px;
+    height: 127px;
+    z-index: 1000;
+    margin-top: 42px;
+    margin-left: 50px;
+    cursor: pointer;
+}
 #a1_img{
     width: 22vw;
     height: 23vh
 }
-
+#a2_img{
+    width: 25vw;
+    height: 43vh;
+}
+#a3_img{
+    width: 14vw;
+    height: 10vw;
+}
+#nhaxe{
+    width: 15vw;
+    height: 20vh;
+}
+#cantin{
+    width: 8.5vw;
+    height: 10vw;
+}
+#b1_map{
+    width: 10vw;
+    height: 3.5vw;
+}
+#b5_map{
+    width: 19.2vw;
+    height: 9.6vw;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
