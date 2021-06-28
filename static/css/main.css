@@ -9,7 +9,7 @@ body{
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-image: url('./static/images/home/bg-home.png');
+    background-image: url('../images/home/bg-home.png');
 
 }
 .content{
