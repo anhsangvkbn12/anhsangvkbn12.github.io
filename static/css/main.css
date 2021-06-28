@@ -10,7 +10,6 @@ body{
     width: 100vw;
     height: 100vh;
     background-image: url('../images/home/bg-home.png');
-
 }
 .content{
     position: relative;
@@ -52,7 +51,10 @@ body{
     line-height: 28px;
     margin-left: 20px;
 }
-.place-title:hover{
+.place-title a {
+    color: #283352;
+}
+.place-title:hover a{
     color: #E23C47;
 }
 .home-btn-next{
