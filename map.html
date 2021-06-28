@@ -17,87 +17,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </head>
-<style>
-    .shushi_content {
-        margin-top: 5%;
-        margin-left: 5%;
-    }
-    
-    .shushi_header {
-        margin-bottom: 10%;
-    }
-    
-    .shushi_socialnetwork {
-        margin-bottom: 0;
-    }
-    
-    .footer_social {
-        display: flex;
-    }
-    
-    .text_bold {
-        text-transform: uppercase;
-        font-size: 70px;
-        color: f35108;
-        letter-spacing: 15px;
-        font-weight: 800;
-    }
-    
-    .text_normal {
-        font-size: 25px;
-        color: #f35108;
-        font-weight: bold;
-        font-weight: 400;
-    }
-    
-    .text_social {
-        font-size: 24px;
-        color: #f35108;
-        margin-left: 10px;
-    }
-    
-    .icon_social {
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-</style>
 
 <body>
     <div id="loader" class="alCenter" style="display: none;">
         <p><img src="static/images/loader.gif?v=1.2" width="96"></p>
         <p>Đang tải dữ liệu...</p>
     </div>
-    <div id="intro" style="display: none;">
-        <div class="rocket"><img src="static/images/loader/rocket.png" width="140"></div>
-        <div class="clouds">
-            <div class="cloud" data-left="-10%" data-right="auto" style="left: 10%; bottom: 14%;">
-                <img src="static/images/loader/cloud.png" width="46%">
-            </div>
-            <div class="cloud flip ani4s" data-left="auto" data-right="-10%" style="right: 10%; bottom: 14%;">
-                <img src="static/images/loader/cloud.png" width="46%">
-            </div>
-
-            <div class="cloud ani4s" data-left="-40%" data-right="auto" style="left: -20%; bottom: -16%;">
-                <img src="static/images/loader/cloud3.png" width="58%">
-            </div>
-            <div class="cloud flip ani6s" data-left="auto" data-right="-35%" style="right: -15%; bottom: -16%;">
-                <img src="static/images/loader/cloud3.png" width="58%">
-            </div>
-
-            <div class="cloud ani4s" data-left="-10%" data-right="auto" style="left: 10%; bottom: -16%;">
-                <img src="static/images/loader/cloud2.png" width="76%">
-            </div>
-            <div class="cloud flip" data-left="auto" data-right="-10%" style="right: 10%; bottom: -16%;">
-                <img src="static/images/loader/cloud2.png" width="76%">
-            </div>
-        </div>
-    </div>
     <div id="web" style="display: block;">
         <main>
             <div class="prlx-ctn" id="prlx">
                 <div id="scene" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; position: relative;">
                     <div data-depth-x="0.5" data-depth-y="0.3" class="layer city" style="transform: translate3d(-44.1px, -12.8px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
-                        <div class="over btnFile" style="margin-top:7vh;margin-left:-17vw">
+                        <div class="over people btnFile" style="margin-top:7vh;margin-left:-17vw">
                             <div class="effect" style="display: none;">
                                 <span></span><span></span>
                             </div>
@@ -122,7 +53,7 @@
 <script src="./static/js/owl.carousel.min.js "></script>
 <script src="./static/js/scripts.js "></script>
 <script>
-    $('#loader').show();
+  $('#loader').show();
     $('#intro').hide();
     $('#web').hide();
     window.onload = function() {
@@ -131,8 +62,19 @@
         $('#loader').hide();
         // runIntro();
         initPage();
-    };
 
+        var file = 'steps2Member.html'
+
+        //show modal
+        if (file != undefined && file != '') {
+            if (file == 'home') {
+                hideModal();
+                hideMainMn();
+            } else {
+                openModal(file, '');
+            }
+        }
+    };
 
 
 </script>
