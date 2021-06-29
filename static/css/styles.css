@@ -729,6 +729,8 @@ footer a:hover {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     animation: 2s infinite aniWave;
+    margin-top: -25px;
+    margin-left: 5px;
 }
 
 .prlx-ctn .over .effect span:last-child {
@@ -738,6 +740,8 @@ footer a:hover {
 .prlx-ctn .over .pop {
     position: absolute;
     transform: scale(0);
+    margin-top: -96px;
+    margin-left: -30px;
     transition: all .2s;
     -moz-transition: all .2s;
     -webkit-transition: all .2s;
@@ -752,7 +756,7 @@ footer a:hover {
 }
 
 .prlx-ctn .pop img {
-    width: 48px;
+    width: 64px;
 }
 
 .prlx-ctn .over .info {
@@ -814,11 +818,10 @@ footer a:hover {
 
 .typewriter {
     display: none;
+    margin-top: -130px;
     position: absolute;
-    background: rgba(255, 255, 255, 1);
+    background: rgba(255,255,255,1);
     padding: 10px;
-    width: 175px;
-    text-align: center;
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -839,9 +842,7 @@ footer a:hover {
 
 .typewriter h6 {
     overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
     white-space: nowrap;
-    /* Keeps the content on a single line */
     margin: auto;
     transition: all .2s;
     -moz-transition: all .2s;
