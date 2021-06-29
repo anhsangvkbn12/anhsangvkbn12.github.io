@@ -681,6 +681,8 @@ footer a:hover {
     height: 100vh;
     overflow: hidden;
     position: relative;
+    background-image: url('../images/map/bg.png');
+
 }
 
 .prlx-ctn .layer {
@@ -691,10 +693,11 @@ footer a:hover {
 .prlx-ctn .bg img {
     width: 110%;
     margin-left: -5%;
-    height: 110%;
-    margin-top: -5%;
 }
-
+.prlx-ctn .city .bg img {
+    width: 120%;
+    margin-left: -10%;
+}
 .prlx-ctn .over {
     position: absolute;
     left: 50%;
@@ -1406,34 +1409,7 @@ ul.tabs li.current {
     margin-left: 50px;
     cursor: pointer;
 }
-#a1_img{
-    width: 22vw;
-    height: 23vh
-}
-#a2_img{
-    width: 25vw;
-    height: 43vh;
-}
-#a3_img{
-    width: 14vw;
-    height: 10vw;
-}
-#nhaxe{
-    width: 15vw;
-    height: 20vh;
-}
-#cantin{
-    width: 8.5vw;
-    height: 10vw;
-}
-#b1_map{
-    width: 10vw;
-    height: 3.5vw;
-}
-#b5_map{
-    width: 19.2vw;
-    height: 9.6vw;
-}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
