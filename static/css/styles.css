@@ -1402,8 +1402,8 @@ ul.tabs li.current {
 -------------------------------------------------- */
 #logo_map{
     position: fixed;
-    width: 99px;
-    height: 127px;
+    width: 5vw;
+    height: auto;
     z-index: 1000;
     margin-top: 42px;
     margin-left: 50px;
