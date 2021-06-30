@@ -15,7 +15,11 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+<style>
+.owl-carousel .owl-item img {
+    border-radius: 15px;
+}
+</style>
 </head>
 
 <body>
@@ -100,6 +104,29 @@
                     <span></span><span></span>
                 </div>
             </div>
+
+            <div class="over people" style="margin-left: -33%; margin-top: -10%">
+                <div class="effect" style="display: none;">
+                    <span></span><span></span>
+                </div>
+                <!-- newsslide -->
+                <div class="body" style="opacity: 1; margin-top: 0px;">
+                    <ul class="owl-carousel newsSlider">   
+                        <li class="item btnFile">
+                            <img src="./static/images/map/tintuc1.jpg" >
+                        </li>
+                        <li class="item btnFile">
+                            <img src="./static/images/map/tintuc1.jpg" >
+                        </li>
+
+                        <li class="item btnFile">
+                            <img src="./static/images/map/tintuc1.jpg">
+                        </li>
+                    </ul>
+                    <img src="./static/images/map/tintuc.png" width="256" alt="News">
+                </div>
+            </div>
+
             <div class="bg">
                 <img src="./static/images/map/bg-map.png" style="opacity: 0;">
             </div>
@@ -136,7 +163,16 @@
             }
         }
     };
-
+    $('.newsSlider').owlCarousel({
+        nav:false,
+        dots:true,
+        loop: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        responsive:{
+            0:{ items:1 }
+        }
+    });
 
 </script>
 

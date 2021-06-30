@@ -1123,10 +1123,10 @@ footer a:hover {
 
 .newsSlider {
     width: 246px;
-    height: 126px;
+    height: 156px;
     overflow: hidden;
     position: absolute;
-    margin-left: 5px;
+    margin-left: 3px;
     margin-top: 5px;
 }
 
