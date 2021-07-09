@@ -22,13 +22,15 @@
 </style>
 </head>
 
-<body>
+<body style="overflow: hidden;">
   <div id="loader" class="alCenter" style="display: none;">
       <p><img src="static/images/loader.gif?v=1.2" width="96"></p>
       <p>Đang tải dữ liệu...</p>
   </div>
-  <div id="web" style="display: block;">
-    <img src="./static/images/map/logo.png" alt="" id="logo_map">
+  <iframe style="width:100vw;height:100vh;z-index:1;display: none;" id="a2" src="./a2.html" title="Tòa nhà A2">
+  </iframe>
+  <div id="web" style="display: block;z-index:1000; "> 
+    <img src="./static/images/map/logo.png" alt="" style="z-index: 1000;" id="logo_map">
     <main>
       <div class="prlx-ctn" id="prlx">
         <div id="scene">
@@ -38,12 +40,12 @@
                 </div>
             </div>
         <div data-depth-x="0.55" data-depth-y="0.35" class="layer city">
-            <div class="over people btnFile" style="margin-top:-5.5%;margin-left:14%">
+            <div class="over people btnFile"  style="margin-top:-5.5%;margin-left:14%">
                 <div class="typewriter">
                     <h6>Tòa nhà A2</h6>
                 </div>
                 <div class="pop active">
-                    <img src="./static/images/map/icon_place.png">
+                    <img id="icon-a2" src="./static/images/map/icon_place.png">
                 </div>
                 <div class="effect" style="display: none;">
                     <span></span><span></span>
@@ -145,6 +147,7 @@
       </div>
     </main>
     <footer></footer>
+
   </div>
 </body>
 <script src="./static/js/jquery.easing.1.3.js "></script>
@@ -186,5 +189,11 @@
     });
 
 </script>
-
+<script>
+    
+    $("#icon-a2").click(function() {
+      $('#a2').css({ display: 'block', opacity: 0 });
+      $('#a2').animate({ opacity: 1 }, 300);
+    })
+</script>
 </html>

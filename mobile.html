@@ -34,7 +34,40 @@
         background-color: #F3F5F9;">
             <!-- Modal content-->
             <div class="modal-content" style="width:100%;height:100%">
-                    <a href="#" rel="modal:close">Close</a>
+               <div class="header_back">
+                  <div class="icon_back">
+                    <a href="#" rel="modal:close"><img  src="./static/images/home/home-btn-back.png" alt="back" width="9px" height="18px">
+                    </a>
+                  </div>
+                  <div class="text_back">Tìm kiếm</div>
+               </div>
+               <div class="content-place" style="background-color: white;height: 16vw;margin-right: 4vw;">
+                <svg style="margin-left:4vw" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.9666 19.7002L19.6999 16.4335C20.7499 14.8002 21.3333 12.9335 21.3333 10.8335C21.3333 5.00016 16.6666 0.333496 10.8333 0.333496C4.99992 0.333496 0.333252 5.00016 0.333252 10.8335C0.333252 16.6668 4.99992 21.3335 10.8333 21.3335C12.9333 21.3335 14.7999 20.7502 16.4333 19.7002L19.6999 22.9668C20.6333 23.9002 22.0333 23.9002 22.9666 22.9668C23.8999 22.0335 23.8999 20.6335 22.9666 19.7002ZM10.8333 19.0002C6.28325 19.0002 2.66659 15.3835 2.66659 10.8335C2.66659 6.2835 6.28325 2.66683 10.8333 2.66683C15.3833 2.66683 18.9999 6.2835 18.9999 10.8335C18.9999 15.3835 15.3833 19.0002 10.8333 19.0002Z" fill="url(#paint0_linear)"/>
+                  <path d="M14.3332 7.3335H7.33317C6.63317 7.3335 6.1665 7.91683 6.1665 8.50016C6.1665 9.20016 6.63317 9.66683 7.33317 9.66683H14.3332C15.0332 9.66683 15.4998 9.20016 15.4998 8.50016C15.4998 7.91683 15.0332 7.3335 14.3332 7.3335Z" fill="url(#paint1_linear)"/>
+                  <path d="M10.8332 12H7.33317C6.63317 12 6.1665 12.4667 6.1665 13.1667C6.1665 13.8667 6.63317 14.3333 7.33317 14.3333H10.8332C11.5332 14.3333 11.9998 13.8667 11.9998 13.1667C11.9998 12.5833 11.5332 12 10.8332 12Z" fill="url(#paint2_linear)"/>
+                  <defs>
+                  <linearGradient id="paint0_linear" x1="11.9999" y1="0.333496" x2="11.9999" y2="23.6668" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FF8989"/>
+                  <stop offset="1" stop-color="#FA5252"/>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear" x1="10.8332" y1="7.3335" x2="10.8332" y2="9.66683" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FF8989"/>
+                  <stop offset="1" stop-color="#FA5252"/>
+                  </linearGradient>
+                  <linearGradient id="paint2_linear" x1="9.08317" y1="12" x2="9.08317" y2="14.3333" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FF8989"/>
+                  <stop offset="1" stop-color="#FA5252"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>                  
+                <input 
+                    type="text" id="input_search1"
+                    placeholder="Tìm địa chỉ phòng ban, khoa" 
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Tìm địa chỉ phòng ban, khoa'" />
+             </div>
+             <!-- <div style="background-color:#E23C47;height: 1px;margin-top: 8px;margin-left: 48px;margin-right: 48px;"></div>     -->
             </div>
 
         </div>
@@ -87,18 +120,20 @@
       window.location.href = "./index.html"
     }
   })
+  $("#icon_back").click(function() {
+        alert("1")
+      $('#inputsearch').modal('hide')
+    })
   </script>
   <script>
+
+
     $( "#input_search").focus(function() {
         $('#inputsearch').modal('show')
-      $("#path_search1").css("fill", "url(#paint0_linear)");
-      $("#path_search2").css("fill", "url(#paint1_linear)");
-      $("#path_search3").css("fill", "url(#paint2_linear)");
-      $("#under_search").css("background-color", "#E23C47");
     });
-    $( "#input_search").on('blur', function() {
-      $("path").css("fill", "#7988A4;");
-      $("#under_search").css("background-color", "#E4E9F2");
-    });
+    $( "#input_search1").focus(function() {
+
+  });
+
   </script>
   </html>

@@ -40,6 +40,8 @@ body{
     margin-left: 4vw;
     height: 32px;
     margin-top: 6.4vw;
+    border-radius: 16px 16px 0px 0px;
+    outline: none;
 }
 .place-title{
     cursor: pointer;
@@ -78,4 +80,30 @@ body{
 }
 #input_search:focus::placeholder {
     color: transparent;
+}
+.header_back{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top:5vw;
+    margin-left: 4.8vw;
+
+}
+.text_back{
+    margin-left: 4.8vw;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #39476A;
+    margin-top: -1vw;
+}
+#input_search1{
+    border:none;
+    width: 80%;
+    margin-left: 4vw;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    outline: none;
 }
