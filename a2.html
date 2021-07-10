@@ -227,8 +227,6 @@
         <div class="name-menu-floor"><p>Văn phòng</p></div>
         <div class="name-menu-floor"><p>Văn phòng</p></div>
         <div class="name-menu-floor"><p>Văn phòng</p></div>
-
-
       </div>
     </div>
     <div class="sidebar-floor">
@@ -264,5 +262,27 @@
       </div>
     </div>
   </div>
+<script>
+   let list_floor=document.querySelectorAll(".floor-a2");
+   for (let i=0;i<list_floor.length;i++){
+     list_floor[i].onclick=function(){
+       let j=0;
+       while(j<list_floor.length){
+         list_floor[j++].className='floor-a2';
+       }
+       list_floor[i].className='floor-a2 current_floor';
+     }
+   }
 
+   let menu_floor=document.querySelectorAll(".name-menu-floor");
+   for (let i=0;i<menu_floor.length;i++){
+     menu_floor[i].onclick=function(){
+       let j=0;
+       while(j<menu_floor.length){
+         menu_floor[j++].className='name-menu-floor';
+       }
+       menu_floor[i].className='name-menu-floor current-menu';
+     }
+   }
+</script>
 </body>
