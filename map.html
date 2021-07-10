@@ -41,7 +41,7 @@
       <p style="margin-top:20px;font-size: 18px;line-height: 24px;text-align: center;color: #39476A;">Đang tải dữ liệu...</p>
   </div>
   <div class="button-close">
-      <img src="" alt="">
+      <img style="margin-right:32px" src="./static/images/map/btn-close.png" alt="close" width="72px" height="72px">
   </div>
   <iframe style="width:100vw;height:100vh;z-index:1;display: none;" id="a2" src="./a2.html" title="Tòa nhà A2">
   </iframe>
@@ -210,6 +210,13 @@
     $(".btn-a2").click(function() {
       $('#a2').css({ display: 'block', opacity: 0 });
       $('#a2').animate({ opacity: 1 }, 300);
+      $('.button-close').animate({ opacity: 1 }, 300);
+    })
+
+    $(".button-close").click(function() {
+        $('#a2').css({ display: 'none' });
+
+      $('.button-close').animate({ opacity: 0 }, 300);
     })
 </script>
 </html>
