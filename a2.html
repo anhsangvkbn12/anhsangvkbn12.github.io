@@ -12,7 +12,7 @@
     width: 100vw;
     height: 100%;
     overflow: hidden;
-    background-image: url('/static/images/trangcon/bg.png');
+    background-image: url('./static/images/trangcon/bg.png');
   }
   .content{
     width: 100vw;
@@ -24,10 +24,9 @@
   .sidebar-left{
     width: 22vw;
     height: 100vh;
-    background: #FFFFFF;
-    opacity: 0.64;
+    min-width: 300px;
+    background-color:rgba(255,255,255,0.64);
     box-shadow: 8px 0px 16px rgba(193, 202, 204, 0.4);
-    text-align: center;
   }
   .sidebar-search{
     width: 18.125vw;
@@ -42,6 +41,8 @@
     border-radius: 16px;
   }
   #input_search{
+    width: 15vw;
+    min-width: 150px;
     border:none;
     margin-left: 12px;
     font-family: Roboto;
@@ -51,20 +52,69 @@
     line-height: 24px;
     outline: none;
 }
+.title-floor{
+  width: 100%;
+  position: relative;
+  margin-left: 1.67vw;
+}
+.title-floor p{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  color: #000000;
+  margin: 0;
+}
+.menu-floor {
+    position: relative;
+    margin-top: 24px;
+    margin-left: 1.67vw;
+    display: grid;
+    grid-template-columns: auto;
+}
+.name-menu-floor{
+  cursor: pointer;
+  width: 18.125vw;
+  min-width: 250px;
+  min-height: 45px;
+}
+.name-menu-floor p{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #7988A4;
+  margin-left: 20px;
 
+
+}
+.current-menu{
+  background-color: #C81E2A;
+  border-radius: 12px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.current-menu p{
+  color: #FFFFFF;
+}
 
 
   .sidebar-floor{
     width: 6.25vw;
     height: 39.6vw;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 10vh;
   }
   .floor-a2{
-    display: inline-grid;
-  grid-template-columns: auto;
-    min-height: 3.6vw;
-    min-width: 6.25vw;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto;
+    margin-bottom: 2px;
+    height: 3.6vw;
+    min-width: 90px;
+    min-height: 40px;
+    width: 6.25vw;
     background:white;
     text-align: center;
   }
@@ -76,9 +126,11 @@
     font-size: 20px;
     line-height: 28px;
     text-transform: uppercase;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   .current_floor{
-    background: #C81E2A;
+    background-color: #C81E2A;
   }
   .current_floor p{
     color: white;
@@ -113,10 +165,23 @@
               onfocus="this.placeholder = ''"
               onblur="this.placeholder = 'Tìm địa chỉ phòng ban, khoa'" />
       </div>
+      <div class="title-floor"><p>Tòa nhà A2</p></div>
+      <div class="menu-floor">
+        <div class="name-menu-floor current-menu"><p>Văn phòng</p></div>
+        <div class="name-menu-floor"><p>Phòng đào tạo</p></div>
+        <div class="name-menu-floor"><p>Phòng chính trị và công tác sinh viên</p></div>
+        <div class="name-menu-floor"><p>Văn phòng</p></div>
+        <div class="name-menu-floor"><p>Văn phòng</p></div>
+        <div class="name-menu-floor"><p>Văn phòng</p></div>
+        <div class="name-menu-floor"><p>Văn phòng</p></div>
+        <div class="name-menu-floor"><p>Văn phòng</p></div>
+
+
+      </div>
     </div>
     <div class="sidebar-floor">
       <div class="floor-a2 current_floor"><p>Tầng 10</div>
-      <div class="floor-a2"><p>Tầng 9</p></div>
+      <div class="floor-a2 "><p>Tầng 9</p></div>
       <div class="floor-a2"><p>Tầng 8</p></div>
       <div class="floor-a2"><p>Tầng 7</p></div>
       <div class="floor-a2"><p>Tầng 6</p></div>

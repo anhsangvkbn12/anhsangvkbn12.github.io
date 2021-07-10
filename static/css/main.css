@@ -11,9 +11,18 @@ body{
     height: 100vh;
     background-image: url('../images/home/bg-home.png');
 }
+.home-logo {
+    position: absolute;
+    width: 100vw;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    text-align: center;
+}
 .content{
     position: relative;
-    top: 30vh;
+    top: 35vh;
     margin-left: auto;
     margin-right: auto;
     background: #FFFFFF;

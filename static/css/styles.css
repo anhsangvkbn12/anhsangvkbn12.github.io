@@ -165,12 +165,12 @@ a:hover {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     line-height: 1.5;
     color: #222;
-    background: #3B464E;
-    background-image: linear-gradient(to right, #3B464E, #3B464E);
+    background: white;
+    background-image: url('../images/map/bg.png');
 }
 
 input,
@@ -428,13 +428,10 @@ p {
 
 #loader {
     position: absolute;
-    top: 42%;
-    left: 50%;
-    width: 140px;
-    margin-left: -70px;
+    top: 25%;
+    left: 30vw;
     color: #fff;
     font-size: 0.76em;
-    text-align: center;
 }
 
 #web {
@@ -1410,6 +1407,40 @@ ul.tabs li.current {
     margin-left: 50px;
     cursor: pointer;
 }
+
+/*progress bar horizontal*/
+/* .bar-container{
+    width: 50vw;
+} */
+.loader1 {
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    height: 13px;
+    background: white;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.loader1 .loader-bar {
+    display: block;
+    height: 100%;
+    background-size: 300% 100%;
+    width: 0;
+    animation: progress-animation 3s normal forwards;
+    background-color: #FA5252;
+}
+@keyframes progress-animation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+  
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
