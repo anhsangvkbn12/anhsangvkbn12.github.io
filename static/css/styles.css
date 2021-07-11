@@ -1577,6 +1577,31 @@ ul.tabs li.current {
         width: 226px;
         height: 360px;
     }
+    .left-menu-map {
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 18px;
+        margin-right: 18px;
+        width: 190px;
+    }
+    .container-menu {
+        grid-template-rows: 45px 45px 45px 45px;
+        grid-row-gap: 12px;
+    }
+    .icon-in-menu{
+        width: 18px;
+        height: auto;
+    }
+    .child-contain-menu{
+        display:grid;
+        grid-template-columns: 26px auto 16px;
+        grid-column-gap:6px;
+        align-items: center;
+    }
+    .icon-child-menu {
+        margin-left: 6px;
+    }
+
   }
 
 
