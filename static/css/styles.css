@@ -692,8 +692,7 @@ footer a:hover {
     margin-left: -5%;
 }
 .prlx-ctn .city .bg img {
-    height: 100%;
-    width: auto;
+    width: 120%;
     margin-left: -10%;
 }
 .prlx-ctn .over {
@@ -1450,36 +1449,36 @@ ul.tabs li.current {
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-@media screen and (min-width: 1600px) and (max-width:1920px) {
+/* @media screen and (min-width: 1600px)  { */
     #floor-a2{
-        top:33%;
-        left: 45%;
+        top:39%;left: 63%;
     }
     #floor-a1{
-       top:63%;left: 32%;
+       top:72%;left: 45%;
     }
     #floor-a3{
-        top:22%;left: 43%;
+        top:25%;left: 61%;
     }
     #floor-hta1{
-        top:49%;left: 29%;
+        top:57%;left: 41%;
     }
     #floor-ct{
-       top:24%;left: 37%;
+        top:27%;left: 53%;
     }
     #floor-b5{
-        top:34%;left: 28%;
+        top:40%;left: 40%;
     }
     #floor-mc{
-       top:77%;left: 53%;
+       top:90%;left: 72%;
     }
-    #right-slider{
-        top: 25%; right: 17%;
+    #right-slider {
+        top: 25%;
+        left: 87%;
     }
     .slider-map{
         width: 327px;
     }
-
+/* 
   }
   @media screen and (min-width: 1366px) and (max-width:1599px) {
     #floor-a2{
@@ -1519,7 +1518,7 @@ ul.tabs li.current {
         width: 261px;
     }
 
-  }
+  } */
 
 
 
