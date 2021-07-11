@@ -1517,6 +1517,37 @@ ul.tabs li.current {
     line-height: 24px;
     color: #7988A4;
   }
+  .search-map{
+    margin-top: 20px;
+    position: absolute;
+    z-index: 100;
+    width: 30vw;
+    height: 2.7vw;
+    left: 40vw;
+    background: #F1F9FA;
+    box-shadow: 0px 8px 16px #c2e0e4;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 40px auto 16px;
+    align-items: center;
+  }
+  #input_search{
+    border:none;
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    outline: none;
+    background: transparent;
+}
+    #search_btn{
+        fill:#7988A4;
+        margin-left: 16px;
+    }
+    #input_search:focus::placeholder {
+        color: transparent;
+    }
 
 
 
