@@ -1429,8 +1429,9 @@ ul.tabs li.current {
     cursor: pointer;
     opacity: 0;
     position: fixed;
-    width: 100vw;
+    width: 3.75vw;
     margin-top: 32px;
+    margin-left: 96vw;
     display: flex;
     flex-direction: row-reverse;
 }
@@ -1445,11 +1446,7 @@ ul.tabs li.current {
 
 
 
-  
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
-/* @media screen and (min-width: 1600px)  { */
     #floor-a2{
         top:39%;left: 63%;
     }
@@ -1475,50 +1472,81 @@ ul.tabs li.current {
         top: 25%;
         left: 87%;
     }
+    #left-menu{
+       top: 27%;
+        right: 75%;
+    }
     .slider-map{
         width: 327px;
     }
-/* 
+    .left-menu-map{
+        position: absolute;
+        margin-top: 71px;
+        margin-left: 24px;
+        margin-right: 24px;
+        width: 236px;
+    }
+    .container-menu{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 56px 56px 56px 56px;
+        grid-row-gap:16px;
+    }
+    .child-contain-menu{
+        display:grid;
+        grid-template-columns: 36px auto 20px;
+        grid-column-gap:12px;
+        align-items: center;
+    }
+    .current-menu{
+        background: #C81E2A;
+        border-radius: 12px;
+        color: #000;
+    }
+    .current-menu .content-child-menu{
+        color: #fff;
+    }
+  .icon-child-menu{
+      margin-left: 12px;
   }
+  .content-child-menu{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7988A4;
+  }
+
+
+
+
+
+
+  
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
   @media screen and (min-width: 1366px) and (max-width:1599px) {
-    #floor-a2{
-        top:33%;
-        left: 45%;
-    }
-    #floor-a1{
-       top:52%;left: 27%;
-    }
-    #floor-a3{
-        top:22%;left: 43%;
-    }
-    #floor-hta1{
-        top:41%;left: 25%;
-    }
-    #floor-ct{
-       top:22%;left: 32%;
-    }
-    #floor-b5{
-        top:29%;left: 24%;
-    }
-    #floor-mc{
-       top:64%;left: 44%;
-    }
-    #right-slider{
-        top: 20%; right: 33%;
-    }
     #news{
         width: 400px;
     }
     .newsSlider {
-        width: 261px;
+        width: 261px ;
         margin-top:40px;
         margin-left: 72px;
     }
     .slider-map{
-        width: 261px;
+        width: 261px !important;
     }
-
-  } */
+    .slider-map{
+        width: 327px;
+    }
+    #bg-menu{
+        width: 226px;
+        height: 360px;
+    }
+  }
 
 
 
