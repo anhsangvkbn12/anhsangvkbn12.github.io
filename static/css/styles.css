@@ -692,13 +692,12 @@ footer a:hover {
     margin-left: -5%;
 }
 .prlx-ctn .city .bg img {
-    width: 120%;
+    height: 100%;
+    width: auto;
     margin-left: -10%;
 }
 .prlx-ctn .over {
     position: absolute;
-    left: 50%;
-    top: 50%;
     cursor: pointer;
 }
 
@@ -800,7 +799,6 @@ footer a:hover {
 }
 
 .prlx-ctn .people {
-    margin-top: 16%;
     z-index: 14;
 }
 
@@ -1119,12 +1117,12 @@ footer a:hover {
 }
 
 .newsSlider {
-    width: 246px;
-    height: 156px;
+    width: 327px;
+    height: auto;
     overflow: hidden;
     position: absolute;
-    margin-left: 3px;
-    margin-top: 5px;
+    margin-left: 89px;
+    margin-top: 49px;
 }
 
 .newsSlider .owl-nav.disabled+.owl-dots {
@@ -1452,6 +1450,79 @@ ul.tabs li.current {
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
+@media screen and (min-width: 1600px) and (max-width:1920px) {
+    #floor-a2{
+        top:33%;
+        left: 45%;
+    }
+    #floor-a1{
+       top:63%;left: 32%;
+    }
+    #floor-a3{
+        top:22%;left: 43%;
+    }
+    #floor-hta1{
+        top:49%;left: 29%;
+    }
+    #floor-ct{
+       top:24%;left: 37%;
+    }
+    #floor-b5{
+        top:34%;left: 28%;
+    }
+    #floor-mc{
+       top:77%;left: 53%;
+    }
+    #right-slider{
+        top: 25%; right: 17%;
+    }
+    .slider-map{
+        width: 327px;
+    }
+
+  }
+  @media screen and (min-width: 1366px) and (max-width:1599px) {
+    #floor-a2{
+        top:33%;
+        left: 45%;
+    }
+    #floor-a1{
+       top:52%;left: 27%;
+    }
+    #floor-a3{
+        top:22%;left: 43%;
+    }
+    #floor-hta1{
+        top:41%;left: 25%;
+    }
+    #floor-ct{
+       top:22%;left: 32%;
+    }
+    #floor-b5{
+        top:29%;left: 24%;
+    }
+    #floor-mc{
+       top:64%;left: 44%;
+    }
+    #right-slider{
+        top: 20%; right: 33%;
+    }
+    #news{
+        width: 400px;
+    }
+    .newsSlider {
+        width: 261px;
+        margin-top:40px;
+        margin-left: 72px;
+    }
+    .slider-map{
+        width: 261px;
+    }
+
+  }
+
+
+
 
 @media (max-width: 1024px) {
     .svItem .illus .people {
