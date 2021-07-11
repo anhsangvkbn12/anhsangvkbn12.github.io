@@ -1520,7 +1520,7 @@ ul.tabs li.current {
   .search-map{
     margin-top: 20px;
     position: absolute;
-    z-index: 100;
+    z-index: 1;
     width: 30vw;
     height: 2.7vw;
     left: 40vw;
