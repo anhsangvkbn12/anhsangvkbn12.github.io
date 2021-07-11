@@ -274,6 +274,7 @@
 <script>
     
     $(".btn-a2").click(function() {
+      $('.search-map').css({ opacity: 0 });
       $('#a2').css({ display: 'block', opacity: 0 });
       $('#a2').animate({ opacity: 1 }, 300);
       $('.button-close').animate({ opacity: 1 }, 300);
@@ -282,6 +283,7 @@
     $(".button-close").click(function() {
         $('#a2').css({ display: 'none' });
       $('.button-close').animate({ opacity: 0 }, 300);
+      $('.search-map').css({ opacity: 1 });
     })
 </script>
 </html>
