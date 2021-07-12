@@ -1603,6 +1603,10 @@ ul.tabs li.current {
     .icon-child-menu {
         margin-left: 6px;
     }
+    .content-child-menu {
+        font-size: 14px;
+        line-height: 20px;
+    }
 
   }
 

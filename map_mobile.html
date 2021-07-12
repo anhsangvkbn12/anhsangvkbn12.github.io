@@ -14,6 +14,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
+@import url('http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900');
+
     body {
     font-family: "Roboto",sans-serif;
 }
@@ -64,17 +66,107 @@
 .content{
     position: relative;
     width: 100vw;
-    height: 40vh;
+    height: 86vw;
     background-color: #8E9AB8;;
 }
 .content-top{
-    
+    position: relative;
     width: 100%;
     height: 25%;
 }
 .content-bottom{
+    position: relative;
     width: 100%;
     height: 75%;
+    background: #FFFFFF;
+    box-shadow: 0px -4px 16px rgba(189, 189, 189, 0.25);
+    border-radius: 20px 20px 4px 4px;
+}
+.container-content-top{
+    position: absolute;
+    margin-left:  33px;
+    margin-top: 22px;
+    display:grid;
+    grid-template-columns: 36px 36px 36px 36px 36px;
+    grid-column-gap: 32px;
+}
+.circle-content{
+    border-radius:50%;
+   width: 36px;
+   height:36px;
+   background: #E4E9F2;
+    box-shadow: 0px 8px 8px rgba(24, 47, 80, 0.1);
+}
+.title-content-bottom{
+    position: relative;
+    padding-top: 16px;
+    padding-left: 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #283352;
+    margin-bottom: 8px;
+    height: 15%;
+}
+.parent-menu-content{
+    width: 100%;
+    height: 85%;
+    overflow: auto;
+}
+.menu-content-bottom {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.container-menu-bottom{
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+}
+.text-container-menu{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #283352;
+}
+.line-menu{
+    margin-left: 16px;
+    margin-right: 32px;
+    width: auto;
+    height: 2px;
+    display: grid;
+    grid-template-columns: 16px auto 32px ;
+    grid-column-gap:4px;
+    background-color:#E4E9F2;
+}
+.title-floor {
+    display: grid;
+    margin-left: 16px;
+    margin-right: 16px;
+    height: auto;
+    grid-template-columns: 24px auto 32px;
+    padding-left: 0;
+    padding-bottom: 8px;
+}
+.description-floor{
+    margin-left: 16px;
+    margin-right: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #39476A;
+    overflow:auto;
 }
 </style>
 </head>
@@ -101,8 +193,75 @@
   <div id="web" style="display: block;z-index:1000; "> 
     <div class="map"></div>
     <div class="content">
-        <div class="content-top"></div>
-        <div class="content-bottom"></div>
+        <div class="content-top">
+            <div class="container-content-top">
+                <div class="circle-content"></div>
+                <div class="circle-content"></div>
+                <div class="circle-content"></div>
+                <div class="circle-content"></div>
+                <div class="circle-content"></div>
+            </div>
+        </div>
+        <div class="content-bottom" >
+            <div class="title-content-bottom main-menu">Tham quan</div>
+            <div class="parent-menu-content main-menu">
+                <div class="menu-content-bottom">
+                    <div class="container-menu-bottom">
+                        <div class="icon-container-menu"></div>
+                        <div class="text-container-menu">Tòa nhà A1</div>
+                        <img src="./static/images/map/icon/btn-next.png" alt="">
+                    </div>
+                </div>
+                <div class="line-menu"></div>
+                <div class="menu-content-bottom " id="a2">
+                    <div class="container-menu-bottom">
+                        <div class="icon-container-menu"></div>
+                        <div class="text-container-menu">Tòa nhà A2</div>
+                        <img src="./static/images/map/icon/btn-next.png" alt="">
+                    </div>
+                </div>
+                <div class="line-menu"></div>
+                <div class="menu-content-bottom">
+                    <div class="container-menu-bottom">
+                        <div class="icon-container-menu"></div>
+                        <div class="text-container-menu">Tòa nhà A3</div>
+                        <img src="./static/images/map/icon/btn-next.png" alt="">
+                    </div>
+                </div>
+                <div class="line-menu"></div>
+                <div class="menu-content-bottom">
+                    <div class="container-menu-bottom">
+                        <div class="icon-container-menu"></div>
+                        <div class="text-container-menu">Văn phòng một cửa</div>
+                        <img src="./static/images/map/icon/btn-next.png" alt="">
+                    </div>
+                </div>
+                <div class="line-menu"></div>
+                <div class="menu-content-bottom">
+                    <div class="container-menu-bottom">
+                        <div class="icon-container-menu"></div>
+                        <div class="text-container-menu">Văn phòng một cửa</div>
+                        <img src="./static/images/map/icon/btn-next.png" alt="">
+                    </div>
+                </div>
+                <div class="line-menu"></div>
+            </div>
+            </div>
+            <div class="content-bottom trangcon a2" >
+                <div class="title-content-bottom title-floor"> 
+                    <img class="back-btn-map" src="./static/images/map/icon/btn-back.png" alt="">
+                    <div class="descrip-content">
+                        Toà nhà A2
+                    </div>
+                    <img class="next-btn-map" src="./static/images/map/icon/next-in-map.png" alt="">
+                </div>
+                <div  class="parent-menu-content">
+                    <div class="description-floor">
+                        Toà nhà A2 là toà nhà lớn nhất PTIT gồm 9 tầng với 15 phòng ban, khoa và 24 phòng học hiện đại!
+                    </div>
+                </div>
+                </div>
+
     </div>
   </div>
 </body>
@@ -113,7 +272,22 @@
         $('#web').show();
         $('#loader').hide();
     };
+    
+    $('.menu-content-bottom').click(function() {
+        $(this).css('background-color','#FEF6F7');
+        let id_floor='.'+$(this).attr('id');
+        console.log(id_floor)
 
+        setTimeout(function(){ 
+            $('.menu-content-bottom').css('background-color','#FFF');
+            $(id_floor).css( {'margin-top': '-65%'});
+        }, 200);
+    });
+    
+    $('.back-btn-map').click(function() {
+        $('.a2').css( {'margin-top': '0%'});
+    })
+   
 
 </script>
 </html>
