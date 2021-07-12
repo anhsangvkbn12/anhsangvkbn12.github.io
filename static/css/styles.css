@@ -164,9 +164,7 @@ a:hover {
     color: #F11B53;
     outline: none;
 }
-*{
-    font-family: 'Roboto', sans-serif; 
-}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
