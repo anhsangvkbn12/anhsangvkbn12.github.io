@@ -266,6 +266,14 @@
   </div>
 </body>
 <script>
+    $(document).ready(function () {
+    var isMobile = false; //initiate as false
+    if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+      window.location.href = "./map.html"
+    }
+  })
+</script>
+<script>
   $('#loader').show();
     $('#web').hide();
     window.onload = function() {
