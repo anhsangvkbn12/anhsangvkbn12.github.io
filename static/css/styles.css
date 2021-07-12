@@ -1,6 +1,6 @@
 /*RESET CSS*/
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700');
+@import url('http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900');
 html,
 body,
 div,
@@ -163,7 +163,9 @@ a:hover {
     color: #F11B53;
     outline: none;
 }
-
+*{
+    font-family: 'Roboto', sans-serif; 
+}
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
@@ -697,6 +699,8 @@ footer a:hover {
 }
 .prlx-ctn .over {
     position: absolute;
+    left: 50%;
+    top: 50%;
     cursor: pointer;
 }
 
@@ -1448,33 +1452,31 @@ ul.tabs li.current {
 
 
     #floor-a2{
-        top:39%;left: 63%;
+        margin-top:-5%;margin-left: 14%;
     }
     #floor-a1{
-       top:72%;left: 45%;
+        margin-top:12%;margin-left: -6%;
     }
     #floor-a3{
-        top:25%;left: 61%;
+        margin-top:-12%;margin-left: 10%;
     }
     #floor-hta1{
         top:57%;left: 41%;
     }
     #floor-ct{
-        top:27%;left: 53%;
+        margin-top:-10%;margin-left: 2%;
     }
     #floor-b5{
-        top:40%;left: 40%;
+        margin-top:-5%;margin-left: -12%;
     }
     #floor-mc{
-       top:90%;left: 72%;
+        margin-top:20%;margin-left: 23%;
     }
     #right-slider {
-        top: 25%;
-        left: 87%;
+        margin-top:-10%;margin-left: 36%;
     }
     #left-menu{
-       top: 27%;
-        right: 75%;
+        margin-top:-12%;margin-left: -38%;
     }
     .slider-map{
         width: 327px;
@@ -1523,7 +1525,7 @@ ul.tabs li.current {
     z-index: 1;
     width: 30vw;
     height: 2.7vw;
-    left: 40vw;
+    left: 35vw;
     background: #F1F9FA;
     box-shadow: 0px 8px 16px #c2e0e4;
     border-radius: 16px;
@@ -1558,7 +1560,7 @@ ul.tabs li.current {
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-  @media screen and (min-width: 1366px) and (max-width:1599px) {
+  @media screen  and (max-width:1599px) {
     #news{
         width: 400px;
     }
