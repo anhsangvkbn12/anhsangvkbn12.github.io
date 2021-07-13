@@ -76,7 +76,7 @@
                 <div class="typewriter">
                     <h6>Tòa nhà A2</h6>
                 </div>
-                <div class="pop active">
+                <div class="pop">
                     <img class="btn-a2" src="./static/images/map/icon_place.png">
                 </div>
                 <div class="effect btn-a2" style="display: none;">
@@ -87,7 +87,7 @@
                 <div class="typewriter">
                     <h6>Tòa nhà A1</h6>
                 </div>
-                <div class="pop active">
+                <div class="pop">
                     <img src="./static/images/map/icon_place.png">
                 </div>
                 <div class="effect" style="display: none;">
@@ -98,7 +98,7 @@
                 <div class="typewriter">
                     <h6>Tòa nhà A3</h6>
                 </div>
-                <div class="pop active">
+                <div class="pop">
                     <img src="./static/images/map/icon_place.png">
                 </div>
                 <div class="effect" style="display: none;">
@@ -109,7 +109,7 @@
                 <div class="typewriter">
                     <h6>Hội trường A1</h6>
                 </div>
-                <div class="pop active">
+                <div class="pop">
                     <img src="./static/images/map/icon_place.png">
                 </div>
                 <div class="effect" style="display: none;">
@@ -120,7 +120,7 @@
                 <div class="typewriter">
                     <h6>Căn tin</h6>
                 </div>
-                <div class="pop active">
+                <div class="pop">
                     <img src="./static/images/map/icon_place.png">
                 </div>
                 <div class="effect" style="display: none;">
@@ -131,7 +131,7 @@
                 <div class="typewriter">
                     <h6>Kí túc xá B5</h6>
                 </div>
-                <div class="pop active">
+                <div class="pop">
                     <img src="./static/images/map/icon_place.png">
                 </div>
                 <div class="effect" style="display: none;">
@@ -142,7 +142,7 @@
                 <div class="typewriter">
                     <h6>Văn phòng một cửa</h6>
                 </div>
-                <div class="pop active">
+                <div class="pop ">
                     <img src="./static/images/map/icon_place.png">
                 </div>
                 <div class="effect" style="display: none;">
@@ -255,17 +255,7 @@
         // runIntro();
         initPage();
 
-        var file = 'steps2Member.html'
 
-        //show modal
-        if (file != undefined && file != '') {
-            if (file == 'home') {
-                hideModal();
-                hideMainMn();
-            } else {
-                openModal(file, '');
-            }
-        }
     };
     $('.newsSlider').owlCarousel({
         nav:false,

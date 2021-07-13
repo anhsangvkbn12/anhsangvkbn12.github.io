@@ -6,19 +6,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.ico">
+    
+    <link href="static/css/owl.carousel.css" rel="stylesheet">
+    <link href="static/css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900');
 
-    body {
-    font-family: "Roboto",sans-serif;
-}
 .owl-carousel .owl-item img {
     border-radius: 15px;
 }
@@ -28,7 +24,7 @@
 #loader {
     position: relative;
     top: 25%;
-    /* left: 15vw; */
+    left: 0 !important;
     color: #fff;
     font-size: 0.76em;
 }
@@ -61,7 +57,7 @@
     position: relative;
     width: 100vw;
     height: 60vh;
-    background-color: red;
+    background-color: #f3f5f9;
 }
 .content{
     position: relative;
@@ -75,7 +71,7 @@
     height: 25%;
 }
 .content-bottom{
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 75%;
     background: #FFFFFF;
@@ -175,10 +171,222 @@
     line-height: 28px;
     color: #283352;
 }
+.current-circle{
+    background: #FFFFFF;
+}
+.trangcon{
+    display: none;
+}
+.tintuc{
+    display: none;
+}
+.slider-tintuc {
+    position: relative;
+    display:flex;
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine;
+}
+.child-tintuc{
+    height: 100px;
+    width: 50px;
+    background-color: gray;
+}
+.item {
+    background-color: antiquewhite;
+    height: 100px;
+    filter: drop-shadow(0px 8px 8px rgba(200, 220, 250, 0.1));
+    border-radius: 8px;
+}
+
+.owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span {
+    background:  #EC838A;
+}
+.owl-nav.disabled+.owl-dots {
+    margin-top: 24px;
+}
+.owl-dots .owl-dot span {
+    background: #E4E9F2;
+}
+.modal-dialog {
+    margin:0;
+}
+.modal-content {
+    border: 0 ;
+}
+.header_back {
+    position: relative;
+    height: 60px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-top:24px;
+    display: grid;
+    grid-template-columns: 32px auto 32px;
+    grid-column-gap: 4px;
+}
+.header-trangcon{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #283352;
+}
+.content-trangcon{
+    background-color: #fafafa;
+}
+.content-top-trangcon{
+    position: relative;
+    width: 100%;
+    height: 20%;
+}
+.content-bottom-trangcon{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background: #FFFFFF;
+    box-shadow: 0px -4px 16px rgba(189, 189, 189, 0.25);
+    border-radius: 20px 20px 4px 4px;
+}
+.container-content-trangcon{
+    padding: 16px 0px 16px 16px;
+    display: flex;
+    overflow: auto;
+}
+.child-content-trangcon {
+    min-width: 72px;
+    height: 34px;
+    margin-right: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #EDF1F7;
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #7988A4;
+}
+.current-child-trangcon{
+    background: #E23C47;
+    color: #fff;
+}
+.container-content-trangcon::-webkit-scrollbar { 
+  width: 0 !important;
+  display: none; 
+}
+.content-toanha{
+    height: 80%;
+}
+.khoa_zoom{
+    height: 92vh;
+    margin-top: -60vh;
+}
 </style>
 </head>
 
 <body style="overflow: hidden;">
+    <div class="modal fade" id="modal_a2" role="dialog" style="background-color: #F3F5F9;overflow: hidden;">
+        <div class="modal-dialog" style="    width: 100vw;
+        overflow: hidden;
+        height: 100vh;
+        top: 0;
+        background-color: #F3F5F9;">
+            <!-- Modal content-->
+            <div class="modal-content" style="width:100%;height:100%;position:absolute">
+                <div class="map">
+                    <div class="header_back">
+                        <div class="icon_back">
+                            <a href="" rel="modal:close">
+                                <img  src="./static/images/home/home-btn-back.png" alt="back" width="9px" height="18px">
+                            </a>
+                        </div>
+                        <div class="header-trangcon">Tòa Nhà A2</div>
+                        <img src="./static/images/home/btn-search.svg" alt="">
+                    </div>
+                </div>
+                <div class="content content-trangcon">
+                    <div class="content-top-trangcon">
+                        <div class="container-content-trangcon">
+                           <div class="child-content-trangcon current-child-trangcon">Tầng G</div>
+                           <div class="child-content-trangcon">Tầng 1</div>
+                           <div class="child-content-trangcon">Tầng 2</div>
+                           <div class="child-content-trangcon">Tầng 3</div>
+                           <div class="child-content-trangcon">Tầng 4</div>
+                           <div class="child-content-trangcon">Tầng 5</div>
+                           <div class="child-content-trangcon">Tầng 6</div>
+                           <div class="child-content-trangcon">Tầng 6</div>
+                           <div class="child-content-trangcon">Tầng 8</div>
+                           <div class="child-content-trangcon">Tầng 9</div>
+                           <div class="child-content-trangcon ">Tầng 10</div>
+                        </div>
+                    </div>
+                    <div class="content-bottom content-toanha tangg" >
+                        <div class="title-content-bottom main-menu ">Tầng G</div>
+                        <div class="parent-menu-content main-menu ">
+                            <div class="menu-content-bottom menu_toanha" id="khoa_cntt1" >
+                                <div class="container-menu-bottom">
+                                    <div class="icon-container-menu"></div>
+                                    <div class="text-container-menu">Khoa Công Nghệ Thông Tin 1</div>
+                                    <img src="./static/images/map/icon/btn-next.png" alt="">
+                                </div>
+                            </div>
+                            <div class="line-menu"></div>
+                            <div class="menu-content-bottom menu_toanha" id="khoa_attt1">
+                                <div class="container-menu-bottom">
+                                    <div class="icon-container-menu"></div>
+                                    <div class="text-container-menu">Khoa An Toàn Thông Tin 1</div>
+                                    <img src="./static/images/map/icon/btn-next.png" alt="">
+                                </div>
+                            </div>
+                            <div class="line-menu"></div>
+                            <div class="menu-content-bottom menu_toanha " id="khoa_vt1">
+                                <div class="container-menu-bottom">
+                                    <div class="icon-container-menu"></div>
+                                    <div class="text-container-menu">Khoa Viễn Thông 1</div>
+                                    <img src="./static/images/map/icon/btn-next.png" alt="">
+                                </div>
+                            </div>
+                            <div class="line-menu"></div>
+
+                            <div class="menu-content-bottom menu_toanha">
+                                <div class="container-menu-bottom">
+                                    <div class="icon-container-menu"></div>
+                                    <div class="text-container-menu">Khoa</div>
+                                    <img src="./static/images/map/icon/btn-next.png" alt="">
+                                </div>
+                            </div>
+                            <div class="line-menu"></div>
+                        </div>
+                    </div>
+                    <div class="content-bottom content-toanha trangcon khoa_cntt1" >
+                        <div class="title-content-bottom title-floor"> 
+                            <img class="back-btn-khoa" src="./static/images/map/icon/btn-back.png" alt="">
+                            <div class="descrip-content">
+                                Khoa Công Nghệ Thông Tin 1
+                            </div>
+                            <img class="next-btn-khoa khoa_cntt1" src="./static/images/map/icon/btn-zoom.svg" alt="">
+                        </div>
+                        <div  class="parent-menu-content">
+                            <div class="description-floor">
+                                Toà nhà A2 là toà Chức năng:
+                                Khoa Công nghệ thông tin 1 là đơn vị đào tạo trực thuộc Học viện Công nghệ Bưu chính Viễn thông (dưới đây gọi tắt là Học viện) có chức năng đào tạo và nghiên cứu khoa học thuộc lĩnh vực Công nghệ thông tin (Công nghệ thông tin, Công nghệ phần mềm, Hệ thống thông tin, Khoa học máy tính, Kỹ thuật máy tính và An toàn thông tin).
+                                Nhiệm vụ:
+                                Quản lý, tổ chức giảng dạy các môn học, học phần do khoa quản lý cho các hệ (hình thức đào tạo và trình độ đào tạo) đào tạo của Học viện;
+                                Lập kế hoạch và tổ chức thực hiện các hoạt động giáo dục đào tạo theo kế hoạch chung của Học viện;
+                                Lập kế hoạch và tổ chức thực hiện các hoạt động khoa học và công nghệ, hợp tác quốc tế; hợp tác với các tổ chức khoa học và công nghệ, cơ sở sản xuất, kinh doanh liên quan đến ngành nghề đào tạo và huy động sự tham gia của doanh nghiệp và quá trình đào tạo của khoa; lớn nhất PTIT gồm 9 tầng với 15 phòng ban, khoa và 24 phòng học hiện đại!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
 
   <div id="loader" class="alCenter" style="display: none;">
     <p>
@@ -202,17 +410,17 @@
     <div class="content">
         <div class="content-top">
             <div class="container-content-top">
+                <div class="circle-content current-circle" id="thamquan"></div>
                 <div class="circle-content"></div>
                 <div class="circle-content"></div>
                 <div class="circle-content"></div>
-                <div class="circle-content"></div>
-                <div class="circle-content"></div>
+                <div class="circle-content" id="tintuc"></div>
             </div>
         </div>
-        <div class="content-bottom" >
-            <div class="title-content-bottom main-menu">Tham quan</div>
+        <div class="content-bottom content-map thamquan" >
+            <div class="title-content-bottom main-menu ">Tham quan</div>
             <div class="parent-menu-content main-menu">
-                <div class="menu-content-bottom">
+                <div class="menu-content-bottom menu-map" id="a1">
                     <div class="container-menu-bottom">
                         <div class="icon-container-menu"></div>
                         <div class="text-container-menu">Tòa nhà A1</div>
@@ -220,7 +428,7 @@
                     </div>
                 </div>
                 <div class="line-menu"></div>
-                <div class="menu-content-bottom " id="a2">
+                <div class="menu-content-bottom menu-map " id="a2">
                     <div class="container-menu-bottom">
                         <div class="icon-container-menu"></div>
                         <div class="text-container-menu">Tòa nhà A2</div>
@@ -228,7 +436,7 @@
                     </div>
                 </div>
                 <div class="line-menu"></div>
-                <div class="menu-content-bottom">
+                <div class="menu-content-bottom menu-map">
                     <div class="container-menu-bottom">
                         <div class="icon-container-menu"></div>
                         <div class="text-container-menu">Tòa nhà A3</div>
@@ -236,7 +444,7 @@
                     </div>
                 </div>
                 <div class="line-menu"></div>
-                <div class="menu-content-bottom">
+                <div class="menu-content-bottom menu-map">
                     <div class="container-menu-bottom">
                         <div class="icon-container-menu"></div>
                         <div class="text-container-menu">Văn phòng một cửa</div>
@@ -244,7 +452,7 @@
                     </div>
                 </div>
                 <div class="line-menu"></div>
-                <div class="menu-content-bottom">
+                <div class="menu-content-bottom menu-map">
                     <div class="container-menu-bottom">
                         <div class="icon-container-menu"></div>
                         <div class="text-container-menu">Văn phòng một cửa</div>
@@ -253,12 +461,26 @@
                 </div>
                 <div class="line-menu"></div>
             </div>
-            </div>
-            <div class="content-bottom trangcon a2" >
+        </div>
+            <div class="content-bottom content-map trangcon a2" >
                 <div class="title-content-bottom title-floor"> 
                     <img class="back-btn-map" src="./static/images/map/icon/btn-back.png" alt="">
                     <div class="descrip-content">
                         Toà nhà A2
+                    </div>
+                    <img class="next-btn-map a2" src="./static/images/map/icon/next-in-map.png" alt="">
+                </div>
+                <div  class="parent-menu-content">
+                    <div class="description-floor">
+                        Toà nhà A2 là toà nhà lớn nhất PTIT gồm 9 tầng với 15 phòng ban, khoa và 24 phòng học hiện đại!
+                    </div>
+                </div>
+            </div>
+            <div class="content-bottom content-map trangcon a1" >
+                <div class="title-content-bottom title-floor"> 
+                    <img class="back-btn-map" src="./static/images/map/icon/btn-back.png" alt="">
+                    <div class="descrip-content">
+                        Toà nhà A1
                     </div>
                     <img class="next-btn-map" src="./static/images/map/icon/next-in-map.png" alt="">
                 </div>
@@ -267,20 +489,92 @@
                         Toà nhà A2 là toà nhà lớn nhất PTIT gồm 9 tầng với 15 phòng ban, khoa và 24 phòng học hiện đại!
                     </div>
                 </div>
+            </div>
+
+            <div class="content-bottom content-map trangcon tintuc" >
+                <div class="title-content-bottom main-menu ">Tin Tức</div>
+                <div  class="parent-menu-content">
+                    <div class="description-floor" style="margin-top:8px;">
+                        <div id="demos" >
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <a href="https://portal.ptit.edu.vn/thong-bao-ve-viec-tiep-tuc-tang-cuong-trien-khai-cac-bien-phap-phong-chong-dich-covid-19-2/">
+                                        <img src="./static/images/map/slider1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="https://portal.ptit.edu.vn/thong-bao-ve-viec-tiep-tuc-tang-cuong-trien-khai-cac-bien-phap-phong-chong-dich-covid-19-2/"></a>
+                                </div>
+                                <div class="item">
+                                    <a href="https://portal.ptit.edu.vn/thong-bao-ve-viec-tiep-tuc-tang-cuong-trien-khai-cac-bien-phap-phong-chong-dich-covid-19-2/"></a>
+                                </div>
+                                <div class="item">
+                                    <a href="https://portal.ptit.edu.vn/thong-bao-ve-viec-tiep-tuc-tang-cuong-trien-khai-cac-bien-phap-phong-chong-dich-covid-19-2/"></a>
+                                </div>
+                                <div class="item">
+                                    <a href="https://portal.ptit.edu.vn/thong-bao-ve-viec-tiep-tuc-tang-cuong-trien-khai-cac-bien-phap-phong-chong-dich-covid-19-2/"></a>
+                                </div>
+                                <div class="item">
+                                    <a href="https://portal.ptit.edu.vn/thong-bao-ve-viec-tiep-tuc-tang-cuong-trien-khai-cac-bien-phap-phong-chong-dich-covid-19-2/"></a>
+                                </div>
+                            </div>
+                        </div>
+                            
+                    </div>
                 </div>
+            </div>
 
     </div>
   </div>
 </body>
+<script src="./static/js/owl.carousel.min.js "></script>
 <script>
     $(document).ready(function () {
     var isMobile = false; //initiate as false
     if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
       window.location.href = "./map.html"
     }
+    var owl = $('.owl-carousel');
+   owl.owlCarousel({
+     items: 2,
+     loop: true,
+     margin: 10,
+     autoplay: false,
+     autoplayTimeout: 1000,
+     autoplayHoverPause: false
+   });
+
   })
+
+//    var id_tang_nha=null;
+   let list_tang=document.querySelectorAll(".child-content-trangcon");
+   for (let i=0;i<list_tang.length;i++){
+     list_tang[i].onclick=function(){
+       let j=0;
+       while(j<list_tang.length){
+         list_tang[j++].className='child-content-trangcon';
+       }
+       list_tang[i].className='child-content-trangcon current-child-trangcon';
+     }
+   }
+  var id_menu=null;
+  let list_circle=document.querySelectorAll(".circle-content");
+   for (let i=0;i<list_circle.length;i++){
+     list_circle[i].onclick=function(){
+        $('.content-map').css( {'display': 'none'});
+        id_menu='.'+$(this).attr('id');
+        console.log()
+        $(id_menu).css( {'display': 'block'});
+       let j=0;
+       while(j<list_circle.length){
+         list_circle[j++].className='circle-content';
+       }
+       list_circle[i].className='circle-content current-circle';
+     }
+   }
 </script>
 <script>
+    var current_zoom=0;
   $('#loader').show();
     $('#web').hide();
     window.onload = function() {
@@ -288,21 +582,58 @@
         $('#loader').hide();
     };
     
-    $('.menu-content-bottom').click(function() {
+    var id_floor=null;
+    $('.menu-map').click(function() {
         $(this).css('background-color','#FEF6F7');
-        let id_floor='.'+$(this).attr('id');
+        id_floor=$(this).attr('id');
         console.log(id_floor)
 
         setTimeout(function(){ 
-            $('.menu-content-bottom').css('background-color','#FFF');
-            $(id_floor).css( {'margin-top': '-65%'});
+            $('.menu-map').css('background-color','#FFF');
+            $('.'+id_floor).css( {'display': 'block'});
         }, 200);
     });
+    var id_khoa=null;
     
+    $('.menu_toanha').click(function() {
+        $(this).css('background-color','#FEF6F7');
+        id_khoa=$(this).attr('id');
+        console.log(id_khoa)
+        setTimeout(function(){ 
+            $('.menu_toanha').css('background-color','#FFF');
+            $('.'+id_khoa).css( {'display': 'block'});
+        }, 200);
+    });
+
+
     $('.back-btn-map').click(function() {
-        $('.a2').css( {'margin-top': '0%'});
+        console.log(id_floor)
+        $('.'+id_floor).css( {'display': 'none'});
     })
-   
+    $('.next-btn-map').click(function() {
+        $('#modal_'+id_floor).modal('show')
+    })
+    
+    $('.next-btn-khoa').click(function() {
+        if(current_zoom==0){
+            current_zoom=1;
+        }
+        else{
+            current_zoom=0;
+        }
+        $(this).parent().parent().toggleClass( "khoa_zoom" );
+    })
+    
+    $('.back-btn-khoa').click(function() {
+        console.log(current_zoom)
+        if(current_zoom==1){
+            $(this).parent().parent().toggleClass( "khoa_zoom" );
+            current_zoom=0;
+        }else{
+            $(this).parent().parent().css( {'display': 'none'});
+        }
+        
+    })
 
 </script>
 </html>
