@@ -5,16 +5,17 @@
 }
 body{
     overflow: hidden;
+    margin:0;
 }
 .bg-home{
     display: flex;
+    align-items: center;
     width: 100vw;
     height: 100vh;
     background-image: url('../images/home/bg-home.png');
 }
 .content{
     position: relative;
-    top: 70vw;
     margin-left: 5vw;
     margin-right: auto;
     background: #FFFFFF;
