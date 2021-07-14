@@ -20,6 +20,10 @@ def mobile():
 @app.route('/map_mobile.html', methods=['GET'])
 def map_mobile():
     return render_template('./map_mobile.html')
+
+@app.route('/map.html', methods=['GET'])
+def map():
+    return render_template('./map.html')
     
 if __name__ == '__main__':
     app.run('0.0.0.0',debug='true')

@@ -249,13 +249,13 @@
     $('.search-map').hide();
     $('#web').hide();
     window.onload = function() {
-        $('.search-map').show();
+        setTimeout(function(){ 
+            $('.search-map').show();
         $('#web').show();
         $('#loader').hide();
         // runIntro();
-        initPage();
-
-
+        // initPage();
+        }, 3000);
     };
     $('.newsSlider').owlCarousel({
         nav:false,

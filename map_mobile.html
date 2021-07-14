@@ -727,8 +727,11 @@
   $('#loader').show();
     $('#web').hide();
     window.onload = function() {
-        $('#web').show();
-        $('#loader').hide();
+        setTimeout(function(){ 
+            $('#web').show();
+            $('#loader').hide();
+        }, 3000);
+
     };
     
     var id_floor=null;
