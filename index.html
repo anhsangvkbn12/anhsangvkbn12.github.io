@@ -49,8 +49,8 @@
         </svg>
           <input id="input_search" type="text" placeholder="Tìm địa chỉ phòng ban, khoa">
        </div>
-       <div id="under_search"style="height: 1px;background: #E4E9F2;margin-top: 8px;margin-left: 48px;margin-right: 48px;"></div>
-       <div class="search_recommend">
+       <div id="under_search"style="height: 1px;background: #E4E9F2;margin-top: 8px;margin-left: 48px;margin-right: 48px;margin-bottom:16px;"></div>
+       <div class="search_recommend" id="result">
         <div class="recommend_content">
           <div class="content-text">
             <div class="recommend_text">Khối phòng ban</div>      
@@ -63,7 +63,7 @@
           </div>
         </div>
       </div>
-      </div>
+    </div>
 
     </div>
 </body>
@@ -73,6 +73,37 @@
   if ((/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
     window.location.href = "./mobile.html"
   }
+
+      $.ajaxSetup({ cache: false });
+    $('#input_search').keyup(function(){
+      $('#result').html('');
+      $('#state').val('');
+      var dem=0;
+      var searchField = $('#input_search').val();
+      var expression = new RegExp(searchField, "i");
+      $.getJSON('./static/data.json', function(data) {
+      $.each(data, function(key, value){
+        if (value.name.search(expression) != -1)
+        {
+          $('.no_result').remove();
+        $('#result').append('<div class="recommend_content" ><div class="content-text"><div class="recommend_text">'+value.name+'</div></div></div>')    
+          dem++;
+      }
+      }); 
+      });
+      let list_recommend=document.querySelectorAll(".recommend_content");
+      console.log(list_recommend)
+      if(list_recommend.length==0){
+        $('#result').append('<div class="recommend_content no_result"><div class="content-text" style="background-color: white;color: #3366FF;"><div class="recommend_text">Từ khoá tìm kiếm không phù hợp, vui lòng tìm theo gợi ý dưới đây!</div></div></div><div class="recommend_content no_result"><div class="content-text"><div class="recommend_text">Khối phòng ban</div>      </div><div class="content-text"><div class="recommend_text">Khối Đào tạo - Nghiên cứu</div> </div><div class="content-text"><div class="recommend_text">Tiện ích cho sinh viên</div></div></div>')
+      } 
+    });
+    
+    $('#result').on('click', 'li', function() {
+      var click_text = $(this).text().split('|');
+      $('#input_search').val($.trim(click_text[0]));
+      $("#result").html('');
+    });
+
 })
 </script>
 <script>

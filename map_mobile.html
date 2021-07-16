@@ -85,18 +85,24 @@
 }
 .container-content-top{
     position: absolute;
-    margin-left:  33px;
-    margin-top: 22px;
+    margin-left:  20px;
+    margin-top: 20px;
     display:grid;
-    grid-template-columns: 36px 36px 36px 36px 36px;
-    grid-column-gap: 32px;
+    grid-template-columns: 48px 48px 48px 48px 48px;
+    grid-column-gap: 24px;
 }
 .circle-content{
+    display: flex;
     border-radius:50%;
-   width: 36px;
-   height:36px;
+   width: 48px;
+   height:48px;
    background: #E4E9F2;
     box-shadow: 0px 8px 8px rgba(24, 47, 80, 0.1);
+}
+.circle-content svg{
+    margin:auto;
+    width: 24px;
+    height: 24px;
 }
 .title-content-bottom{
     position: relative;
@@ -178,6 +184,9 @@
 }
 .current-circle{
     background: #FFFFFF;
+}
+.current-circle svg{
+    fill:#FA5252;
 }
 .trangcon{
     display: none;
@@ -554,13 +563,70 @@
     <div class="content">
         <div class="content-top">
             <div class="container-content-top">
-                <div class="circle-content current-circle" id="thamquan"></div>
-                <div class="circle-content"></div>
-                <div class="circle-content"></div>
-                <div class="circle-content"></div>
-                <div class="circle-content" id="tintuc"></div>
+                <div class="circle-content current-circle" id="thamquan">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#7988A4" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.1788 10.6818L18.2364 6.60263C18.7398 5.93213 18.997 5.1264 18.997 4.31818C18.997 2.21271 17.2843 0.5 15.1788 0.5C13.0734 0.5 11.3607 2.21271 11.3607 4.31818C11.3607 5.1491 11.6242 5.93958 12.122 6.60395L15.1788 10.6818ZM15.1788 2.40909C16.2315 2.40909 17.0879 3.26553 17.0879 4.31818C17.0879 5.37083 16.2315 6.22727 15.1788 6.22727C14.1262 6.22727 13.2697 5.37083 13.2697 4.31818C13.2697 3.26553 14.1262 2.40909 15.1788 2.40909Z"/>
+                        <path d="M15.1788 4.95437C15.5299 4.95437 15.8151 4.66916 15.8151 4.318C15.8151 3.96684 15.5299 3.68164 15.1788 3.68164C14.8276 3.68164 14.5424 3.96684 14.5424 4.318C14.5424 4.66916 14.8276 4.95437 15.1788 4.95437Z" />
+                        <path d="M15.8641 11.89C16.6499 11.7594 17.0879 11.4436 17.0879 11.3183C17.0879 11.2689 16.9326 11.0957 16.5758 10.9404L15.8641 11.89Z" />
+                        <path d="M13.2697 11.3183C13.2697 11.4436 13.7077 11.7594 14.4935 11.89L13.7817 10.9404C13.4249 11.0957 13.2697 11.2689 13.2697 11.3183Z" />
+                        <path d="M19.2542 7.36684L17.3551 9.90069C17.9899 10.2456 18.3606 10.742 18.3606 11.3181C18.3606 12.2746 17.3029 13.0237 15.8152 13.1911V20.6577L22.2212 18.1124V4.01416L20.231 4.79371C20.1423 5.7214 19.8138 6.62176 19.2542 7.36684Z" />
+                        <path d="M5.63333 3.36377L0.5 7.18179V21.5L5.63333 17.6816V3.36377Z" />
+                        <path d="M14.5424 20.2274V13.1913C13.0548 13.0239 11.997 12.2749 11.997 11.3183C11.997 10.7423 12.3677 10.2458 13.0026 9.90093L11.1034 7.36724C10.5037 6.56665 10.1747 5.62685 10.1132 4.63701L6.90607 3.2627V17.3741L14.5424 20.647V20.2274Z" />
+                    </svg>  
+                </div>
+                <div class="circle-content" id="khoiphongban">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#7988A4" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.32812 5.625C7.88143 5.625 9.14062 4.3658 9.14062 2.8125C9.14062 1.2592 7.88143 0 6.32812 0C4.77482 0 3.51562 1.2592 3.51562 2.8125C3.51562 4.3658 4.77482 5.625 6.32812 5.625Z" />
+                        <path d="M17.6719 5.625C18.0605 5.625 18.375 5.31052 18.375 4.92188V3.51562C18.375 3.12698 18.0605 2.8125 17.6719 2.8125C17.2832 2.8125 16.9688 3.12698 16.9688 3.51562V4.92188C16.9688 5.31052 17.2832 5.625 17.6719 5.625Z"/>
+                        <path d="M14.689 6.44864C14.9636 6.72328 15.4086 6.72332 15.6832 6.44864C15.9579 6.17399 15.9579 5.72901 15.6832 5.45437L14.6883 4.4594C14.4136 4.18476 13.9687 4.18476 13.694 4.4594C13.4194 4.73404 13.4194 5.17902 13.694 5.45367L14.689 6.44864Z"/>
+                        <path d="M20.6546 6.44864L21.6496 5.45367C21.9242 5.17902 21.9242 4.73404 21.6496 4.4594C21.3749 4.18476 20.9299 4.18476 20.6553 4.4594L19.6603 5.45437C19.3857 5.72901 19.3857 6.17399 19.6603 6.44864C19.935 6.72328 20.3799 6.72332 20.6546 6.44864Z"/>
+                        <path d="M11.25 9.14062C11.25 8.75198 10.9355 8.4375 10.5469 8.4375H2.10938C1.72073 8.4375 1.40625 8.75198 1.40625 9.14062V11.25H11.25V9.14062Z" />
+                        <path d="M22.5938 9.14062C22.5938 8.75198 22.2793 8.4375 21.8906 8.4375H13.4531C13.0645 8.4375 12.75 8.75198 12.75 9.14062V11.25H22.5938V9.14062Z" />
+                        <path d="M3.53351 7.03125H9.12016C8.37766 6.06984 7.3945 5.625 6.3281 5.625C5.18412 5.625 4.17593 6.18262 3.53351 7.03125Z" />
+                        <path d="M23.2969 12.6562H0.703125C0.314484 12.6562 0 12.9707 0 13.3594C0 13.8343 0 23.7633 0 23.2969C0 23.6852 0.314812 24 0.703125 24C1.09144 24 1.40625 23.6852 1.40625 23.2969V22.5938H22.5938V23.2969C22.5938 23.6855 22.9082 24 23.2969 24C23.6855 24 24 23.6855 24 23.2969C24 22.1631 24 13.1067 24 13.3594C24 12.9707 23.6855 12.6562 23.2969 12.6562Z" />
+                    </svg>    
+                </div>
+                <div class="circle-content">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#7988A4" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                        <path d="M6.39987 5.20016V3.60019C6.39987 3.37929 6.22077 3.2002 5.99988 3.2002H0.399992C0.179098 3.2002 0 3.37929 0 3.60019V5.20016H6.39987Z" />
+                        <path d="M0 6.00049V19.2002H6.39987V6.00049H0ZM4.7999 11.2004H1.59997C1.37907 11.2004 1.19998 11.0213 1.19998 10.8004V7.60046C1.19998 7.37956 1.37907 7.20046 1.59997 7.20046H4.7999C5.0208 7.20046 5.1999 7.37956 5.1999 7.60046V10.8004C5.1999 11.0213 5.0208 11.2004 4.7999 11.2004Z" />
+                        <path d="M0 21.6001V23.6001C0 23.8209 0.179098 24 0.399992 24H5.99988C6.22077 24 6.39987 23.8209 6.39987 23.6001V21.6001H0Z" />
+                        <path d="M0 20H6.39987V20.8H0V20Z" />
+                        <path d="M7.19989 20H12.3998V20.8H7.19989V20Z" />
+                        <path d="M12.3998 1.60046V0.400481C12.3998 0.179586 12.2207 0.000488281 11.9998 0.000488281H7.59988C7.37899 0.000488281 7.19989 0.179586 7.19989 0.400481V1.60046H12.3998Z" />
+                        <path d="M7.19989 4.40039H12.3998V19.2001H7.19989V4.40039Z" />
+                        <path d="M7.19989 21.6001V23.6001C7.19989 23.8209 7.37899 24 7.59988 24H11.9998C12.2207 24 12.3998 23.8209 12.3998 23.6001V21.6001H7.19989Z" />
+                        <path d="M7.19989 2.40039H12.3998V3.60037H7.19989V2.40039Z" />
+                        <path d="M13.1902 8.28346L13.4043 9.10513L20.1784 7.29872L19.9641 6.47705L13.1902 8.28346Z" />
+                        <path d="M16.5328 21.0972L23.3067 19.2908L22.8778 17.6465L16.1035 19.4529L16.5328 21.0972Z" />
+                        <path d="M22.6759 16.8726L20.3804 8.07275L13.6061 9.87916L15.9016 18.679L22.6759 16.8726Z" />
+                        <path d="M12.9883 7.50913L19.762 5.70292L19.1878 3.50004C19.1286 3.28676 18.9106 3.15923 18.6958 3.21216L12.6959 4.81212C12.484 4.87013 12.3576 5.08712 12.4117 5.3L12.9883 7.50913Z" />
+                        <path d="M23.5086 20.0649L16.7344 21.8713L17.2115 23.7C17.2392 23.8031 17.3068 23.891 17.3996 23.9441C17.4599 23.9807 17.5291 24 17.5996 24C17.6345 24 17.6695 23.9959 17.7035 23.9881L23.7034 22.3881C23.9153 22.3301 24.0416 22.1129 23.9875 21.9001L23.5086 20.0649Z" />
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>                        
+                </div>
+                <div class="circle-content">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#7988A4" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.3659 19.1722C21.3688 18.7332 21.202 18.3176 20.8917 18.0015C20.5815 17.6883 20.1659 17.5156 19.7269 17.5156H1.58636V20.7966H19.6947C20.6078 20.7966 21.3571 20.0679 21.3659 19.1722Z" />
+                        <path d="M0.731709 23.4306H19.683C22.0449 23.4306 23.9913 21.5311 24 19.1691C24.0059 16.8072 22.0859 14.8813 19.7269 14.8813H0.731709C0.327805 14.8813 0 15.2092 0 15.6131V15.9057C0 16.3096 0.327805 16.6374 0.731709 16.6374H19.7269C20.5317 16.6374 21.2517 17.0179 21.7113 17.6091C22.0508 18.0423 22.2498 18.5896 22.2439 19.1808C22.2381 19.7515 22.0391 20.2754 21.7113 20.694C21.243 21.2911 20.5083 21.6745 19.6947 21.6745H0.731709C0.327805 21.6745 0 22.0023 0 22.4062V22.6989C0 23.1028 0.327805 23.4306 0.731709 23.4306Z" />
+                        <path d="M8.81556 14.0036C8.92968 14.0152 13.2556 14.0152 13.3697 14.0036C15.3424 13.7841 16.8877 11.7089 16.8877 9.18014C16.8877 6.50502 15.158 4.33623 13.0243 4.33623C12.5678 4.33623 12.1287 4.43575 11.7219 4.61721C11.5902 4.67575 11.4526 4.71672 11.3121 4.73721C11.3092 4.63477 11.3121 4.52648 11.3239 4.40355C11.3912 3.53428 11.877 2.67087 12.6058 2.18794C12.8019 2.05623 12.8868 1.79867 12.7638 1.58794C12.6497 1.39184 12.3629 1.29818 12.1638 1.42989C11.1014 2.13525 10.4604 3.35282 10.4428 4.60843C10.0419 4.43282 9.61166 4.33623 9.16383 4.33623C7.0302 4.33623 5.30042 6.50502 5.30042 9.18014C5.29752 11.7089 6.84288 13.7841 8.81556 14.0036Z" />
+                        <path d="M9.38634 3.84441C9.75805 3.88539 10.0771 3.57222 10.0332 3.20051C9.93659 2.32831 9.43317 0.891241 7.21464 0.575144C6.84001 0.522461 6.51221 0.835631 6.55026 1.21319C6.64099 2.1088 7.13562 3.58978 9.38634 3.84441Z" />
+                    </svg>    
+                </div>
+                <div class="circle-content" id="tintuc">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#7988A4" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.2 3H8.4C7.41 3 6.6 3.81 6.6 4.8V18.3C6.6 18.84 6.15 19.2 5.7 19.2C5.25 19.2 4.8 18.84 4.8 18.3V8.4C4.8 7.95 4.35 7.5 3.9 7.5C3.45 7.5 3 7.95 3 8.4V19.2C3 20.19 3.81 21 4.8 21H19.2C20.19 21 21 20.19 21 19.2V4.8C21 3.81 20.19 3 19.2 3ZM14.7 12H9.3C8.85 12 8.4 11.64 8.4 11.1C8.4 10.65 8.85 10.2 9.3 10.2H14.7C15.15 10.2 15.6 10.65 15.6 11.1C15.6 11.64 15.15 12 14.7 12ZM18.3 8.4H9.3C8.85 8.4 8.4 8.04 8.4 7.5C8.4 7.05 8.85 6.6 9.3 6.6H18.3C18.75 6.6 19.2 7.05 19.2 7.5C19.2 8.04 18.75 8.4 18.3 8.4Z" />
+                    </svg>    
+                </div>
             </div>
         </div>
+        <!---------------------------- Tham quan --------------------->
         <div class="content-bottom content-map thamquan" >
             <div class="title-content-bottom main-menu ">Tham quan</div>
             <div class="parent-menu-content main-menu">
@@ -607,6 +673,56 @@
 
             </div>
         </div>
+        <!------------------------Khối phòng ban --------------------->
+        <div class="content-bottom content-map khoiphongban" >
+            <div class="title-content-bottom main-menu ">Khối phòng ban</div>
+            <div class="parent-menu-content main-menu">
+                <div class="menu-content-bottom menu-map" id="tckt">
+                    <div class="container-menu-bottom">
+                        <div class="icon-container-menu"></div>
+                        <div class="text-container-menu">Phòng Tài chính - Kế toán</div>
+                        <img src="./static/images/map/icon/btn-next.svg" alt="">
+                    </div>
+                </div>
+                <div class="line-menu"></div>
+                <div class="menu-content-bottom menu-map " id="dt">
+                    <div class="container-menu-bottom">
+                        <div class="icon-container-menu"></div>
+                        <div class="text-container-menu">Phòng Đào tạo</div>
+                        <img src="./static/images/map/icon/btn-next.svg" alt="">
+                    </div>
+                </div>
+                <div class="line-menu"></div>
+                <div class="menu-content-bottom menu-map">
+                    <div class="container-menu-bottom">
+                        <div class="icon-container-menu"></div>
+                        <div class="text-container-menu">Phòng Chính trị và Công tác sinh viên</div>
+                        <img src="./static/images/map/icon/btn-next.svg" alt="">
+                    </div>
+                </div>
+                <div class="line-menu"></div>
+                <div class="menu-content-bottom menu-map">
+                    <div class="container-menu-bottom">
+                        <div class="icon-container-menu"></div>
+                        <div class="text-container-menu">Phòng Đào tạo</div>
+                        <img src="./static/images/map/icon/btn-next.svg" alt="">
+                    </div>
+                </div>
+                <div class="line-menu"></div>
+                <div class="menu-content-bottom menu-map">
+                    <div class="container-menu-bottom">
+                        <div class="icon-container-menu"></div>
+                        <div class="text-container-menu">Phòng Đào tạo</div>
+                        <img src="./static/images/map/icon/btn-next.svg" alt="">
+                    </div>
+                </div>
+                <div class="line-menu end-content"></div>
+
+            </div>
+        </div>
+
+
+        <!---------------- Trang con tham quan----------- -->
             <div class="content-bottom content-map trangcon a2" >
                 <div class="title-content-bottom title-floor"> 
                     <img class="back-btn-map" src="./static/images/map/icon/btn-back.svg" alt="">
@@ -636,6 +752,8 @@
                 </div>
             </div>
 
+
+        <!---------------- Trang con tin tức----------- -->
             <div class="content-bottom content-map trangcon tintuc" >
                 <div class="title-content-bottom main-menu ">Tin Tức</div>
                 <div  class="parent-menu-content">
@@ -648,20 +766,31 @@
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="https://portal.ptit.edu.vn/thong-bao-ve-viec-tiep-tuc-tang-cuong-trien-khai-cac-bien-phap-phong-chong-dich-covid-19-2/"></a>
+                                    <a href="https://portal.ptit.edu.vn/thong-bao-ve-viec-tiep-tuc-tang-cuong-trien-khai-cac-bien-phap-phong-chong-dich-covid-19-2/">
+                                        <img src="./static/images/map/slider1.png" alt="">
+                                    </a>
                                 </div>
                                 <div class="item">
-                                    <a href="https://portal.ptit.edu.vn/thong-bao-ve-viec-tiep-tuc-tang-cuong-trien-khai-cac-bien-phap-phong-chong-dich-covid-19-2/"></a>
+                                    <a href="https://portal.ptit.edu.vn/thong-bao-ve-viec-tiep-tuc-tang-cuong-trien-khai-cac-bien-phap-phong-chong-dich-covid-19-2/">
+                                        <img src="./static/images/map/slider1.png" alt="">
+                                    </a>
                                 </div>
                                 <div class="item">
-                                    <a href="https://portal.ptit.edu.vn/thong-bao-ve-viec-tiep-tuc-tang-cuong-trien-khai-cac-bien-phap-phong-chong-dich-covid-19-2/"></a>
+                                    <a href="https://portal.ptit.edu.vn/thong-bao-ve-viec-tiep-tuc-tang-cuong-trien-khai-cac-bien-phap-phong-chong-dich-covid-19-2/">
+                                        <img src="./static/images/map/slider1.png" alt="">
+                                    </a>
                                 </div>
                                 <div class="item">
-                                    <a href="https://portal.ptit.edu.vn/thong-bao-ve-viec-tiep-tuc-tang-cuong-trien-khai-cac-bien-phap-phong-chong-dich-covid-19-2/"></a>
+                                    <a href="https://portal.ptit.edu.vn/thong-bao-ve-viec-tiep-tuc-tang-cuong-trien-khai-cac-bien-phap-phong-chong-dich-covid-19-2/">
+                                        <img src="./static/images/map/slider1.png" alt="">
+                                    </a>
                                 </div>
                                 <div class="item">
-                                    <a href="https://portal.ptit.edu.vn/thong-bao-ve-viec-tiep-tuc-tang-cuong-trien-khai-cac-bien-phap-phong-chong-dich-covid-19-2/"></a>
+                                    <a href="https://portal.ptit.edu.vn/thong-bao-ve-viec-tiep-tuc-tang-cuong-trien-khai-cac-bien-phap-phong-chong-dich-covid-19-2/">
+                                        <img src="./static/images/map/slider1.png" alt="">
+                                    </a>
                                 </div>
+
                             </div>
                         </div>
                             

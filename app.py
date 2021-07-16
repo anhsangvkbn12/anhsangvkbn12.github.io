@@ -24,6 +24,10 @@ def map_mobile():
 @app.route('/map.html', methods=['GET'])
 def map():
     return render_template('./map.html')
+
+@app.route('/a2.html', methods=['GET'])
+def a2():
+    return render_template('./a2.html')
     
 if __name__ == '__main__':
     app.run('0.0.0.0',debug='true')

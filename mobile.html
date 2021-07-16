@@ -69,8 +69,27 @@
                     onfocus="this.placeholder = ''"
                     onblur="this.placeholder = 'Tìm địa chỉ phòng ban, khoa'" />
              </div>
-             <!-- <div style="background-color:#E23C47;height: 1px;margin-top: 8px;margin-left: 48px;margin-right: 48px;"></div>     -->
+             <div id="under_search1"style="height: 1px;background: #E4E9F2;margin-left: 4.8vw;margin-right: 4.8vw;"></div>
+            <div class="search_recommend" id="result">
+
+              <div class="recommend_content" >
+                <div class="content-text">
+                  <div class="recommend_text">Khối phòng ban</div>      
+                </div>
+              </div>
+              <div class="recommend_content">
+                <div class="content-text">
+                  <div class="recommend_text">Khối phòng ban</div>      
+                </div>
+              </div>
+              <div class="recommend_content">
+                <div class="content-text">
+                  <div class="recommend_text">Khối phòng ban</div>      
+                </div>
+              </div>
+
             </div>
+          </div>
 
         </div>
     </div>
@@ -110,7 +129,6 @@
             <input id="input_search" type="text" placeholder="Tìm địa chỉ phòng ban, khoa">
          </div>
          <div id="under_search"style="height: 1px;background: #E4E9F2;margin-top: 8px;margin-left: 48px;margin-right: 48px;"></div>
-
         </div>
   
       </div>
@@ -121,9 +139,41 @@
     if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
       window.location.href = "./index.html"
     }
+    $.ajaxSetup({ cache: false });
+    $('#input_search1').keyup(function(){
+      $('#result').html('');
+      $('#state').val('');
+      var searchField = $('#input_search1').val();
+      var expression = new RegExp(searchField, "i");
+      $.getJSON('./static/data.json', function(data) {
+      $.each(data, function(key, value){
+        if (value.name.search(expression) != -1)
+        {
+          $('.no_result').remove();
+        $('#result').append('<div class="recommend_content" ><div class="content-text"><div class="recommend_text">'+value.name+'</div></div></div>')    
+      }
+      }); 
+      });
+      let list_recommend=document.querySelectorAll(".recommend_content");
+      console.log(list_recommend)
+      if(list_recommend.length==0){
+        $('#result').append('<div class="recommend_content no_result"style="height: 48px;width:80vw;" ><div class="content-text" style="background-color: white;color: #3366FF;"><div class="recommend_text" style="height: 32px;">Từ khoá tìm kiếm không phù hợp, vui lòng tìm theo gợi ý dưới đây!</div></div></div><div class="recommend_content no_result" ><div class="content-text"><div class="recommend_text">Khối phòng ban</div>      </div></div><div class="recommend_content no_result"><div class="content-text"><div class="recommend_text">Khối phòng ban</div>      </div></div><div class="recommend_content no_result"><div class="content-text"><div class="recommend_text">Khối phòng ban</div>      </div></div>')
+
+     
+      } 
+    });
+    
+    $('#result').on('click', 'li', function() {
+      var click_text = $(this).text().split('|');
+      $('#input_search1').val($.trim(click_text[0]));
+      $("#result").html('');
+    });
   })
+
+
+
+
   $("#icon_back").click(function() {
-        alert("1")
       $('#inputsearch').modal('hide')
     })
   </script>
@@ -133,8 +183,16 @@
     $( "#input_search").focus(function() {
         $('#inputsearch').modal('show')
     });
-    $( "#input_search1").focus(function() {
 
+
+    $( "#input_search1").focus(function() {
+    $(".search_recommend").css("display", "block");
+    $("#under_search1").css("background-color", "#E23C47");
+  });
+    $( "#input_search1").on('blur', function() {
+    $(".search_recommend").css("display", "none");
+    $("path").css("fill", "#7988A4;");
+    $("#under_search1").css("background-color", "#E4E9F2");
   });
 
   </script>

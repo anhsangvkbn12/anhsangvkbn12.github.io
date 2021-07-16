@@ -72,67 +72,35 @@
                 </div>
             </div>
         <div data-depth-x="0.55" data-depth-y="0.35" class="layer city">
-            <div class="over people btnFile" id="floor-a2"  >
-                <div class="typewriter">
-                    <h6>Tòa nhà A2</h6>
-                </div>
-                <div class="pop">
-                    <img class="btn-a2" src="./static/images/map/icon_place.png">
-                </div>
-                <div class="effect btn-a2" style="display: none;">
-                    <span></span><span></span>
-                </div>
-            </div>
             <div class="over people btnFile" id="floor-a1" >
                 <div class="typewriter">
                     <h6>Tòa nhà A1</h6>
                 </div>
                 <div class="pop">
-                    <img src="./static/images/map/icon_place.png">
+                    <img src="./static/images/map/icon_place.svg">
                 </div>
                 <div class="effect" style="display: none;">
                     <span></span><span></span>
                 </div>
             </div>
+            <div class="over people btnFile" id="floor-a2"  >
+                <div class="typewriter">
+                    <h6>Tòa nhà A2</h6>
+                </div>
+                <div class="pop">
+                    <img class="btn-a2" src="./static/images/map/icon_place.svg">
+                </div>
+                <div class="effect btn-a2" style="display: none;">
+                    <span></span><span></span>
+                </div>
+            </div>
+
             <div class="over people btnFile" id="floor-a3">
                 <div class="typewriter">
                     <h6>Tòa nhà A3</h6>
                 </div>
                 <div class="pop">
-                    <img src="./static/images/map/icon_place.png">
-                </div>
-                <div class="effect" style="display: none;">
-                    <span></span><span></span>
-                </div>
-            </div>
-            <div class="over people btnFile" id="floor-hta1">
-                <div class="typewriter">
-                    <h6>Hội trường A1</h6>
-                </div>
-                <div class="pop">
-                    <img src="./static/images/map/icon_place.png">
-                </div>
-                <div class="effect" style="display: none;">
-                    <span></span><span></span>
-                </div>
-            </div>
-            <div class="over people btnFile" id="floor-ct" >
-                <div class="typewriter">
-                    <h6>Căn tin</h6>
-                </div>
-                <div class="pop">
-                    <img src="./static/images/map/icon_place.png">
-                </div>
-                <div class="effect" style="display: none;">
-                    <span></span><span></span>
-                </div>
-            </div>
-            <div class="over people btnFile" id="floor-b5">
-                <div class="typewriter">
-                    <h6>Kí túc xá B5</h6>
-                </div>
-                <div class="pop">
-                    <img src="./static/images/map/icon_place.png">
+                    <img src="./static/images/map/icon_place.svg">
                 </div>
                 <div class="effect" style="display: none;">
                     <span></span><span></span>
@@ -143,12 +111,46 @@
                     <h6>Văn phòng một cửa</h6>
                 </div>
                 <div class="pop ">
-                    <img src="./static/images/map/icon_place.png">
+                    <img src="./static/images/map/icon_place.svg">
                 </div>
                 <div class="effect" style="display: none;">
                     <span></span><span></span>
                 </div>
             </div>
+            <div class="over people btnFile" id="floor-hta1">
+                <div class="typewriter">
+                    <h6>Hội trường A1</h6>
+                </div>
+                <div class="pop">
+                    <img src="./static/images/map/icon_place.svg">
+                </div>
+                <div class="effect" style="display: none;">
+                    <span></span><span></span>
+                </div>
+            </div>
+            <div class="over people btnFile" id="floor-ct" >
+                <div class="typewriter">
+                    <h6>Căn tin</h6>
+                </div>
+                <div class="pop">
+                    <img src="./static/images/map/icon_place.svg">
+                </div>
+                <div class="effect" style="display: none;">
+                    <span></span><span></span>
+                </div>
+            </div>
+            <div class="over people btnFile" id="floor-b5">
+                <div class="typewriter">
+                    <h6>Kí túc xá B5</h6>
+                </div>
+                <div class="pop">
+                    <img src="./static/images/map/icon_place.svg">
+                </div>
+                <div class="effect" style="display: none;">
+                    <span></span><span></span>
+                </div>
+            </div>
+
 
             <div class="over people" id="right-slider" >
                 <div class="effect" style="display: none;">
@@ -254,7 +256,7 @@
         $('#web').show();
         $('#loader').hide();
         // runIntro();
-        // initPage();
+        initPage();
         }, 3000);
     };
     $('.newsSlider').owlCarousel({
