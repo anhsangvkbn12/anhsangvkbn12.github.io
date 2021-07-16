@@ -39,48 +39,48 @@ var initPage = function() {
     //for testing
     countObj();
     initObj();
-    initMainMenu();
+    // initMainMenu();
     setTimeout(runEffect, 2000);
 
-    $('.btnFile').bind('click', function(e) {
+    // $('.btnFile').bind('click', function(e) {
 
-        var obj = $(this);
-        var file = obj.data('file');
-        var svSection = obj.data('section');
+    //     var obj = $(this);
+    //     var file = obj.data('file');
+    //     var svSection = obj.data('section');
 
-        //show modal
-        if (file != undefined && file != '') {
-            if (file == 'home') {
-                hideModal();
-                hideMainMn();
-            } else {
-                openModal(file, svSection);
-            }
-        }
-    })
+    //     //show modal
+    //     if (file != undefined && file != '') {
+    //         if (file == 'home') {
+    //             hideModal();
+    //             hideMainMn();
+    //         } else {
+    //             openModal(file, svSection);
+    //         }
+    //     }
+    // })
 };
 
-var initMainMenu = function() {
-    mainMn = $('#mainMn');
+// var initMainMenu = function() {
+//     mainMn = $('#mainMn');
 
-    mainMn.find('li').each(function() {
-        var obj = $(this);
-        mnArr.push(obj);
-    });
+//     mainMn.find('li').each(function() {
+//         var obj = $(this);
+//         mnArr.push(obj);
+//     });
 
-    $('.mainMnBtn').bind('click', function() {
-        //show modal
-        mainMn.css({ display: 'block', opacity: 0, marginTop: '10%' });
-        mainMn.animate({ opacity: 1, marginTop: '0%' }, 200);
+//     $('.mainMnBtn').bind('click', function() {
+//         //show modal
+//         mainMn.css({ display: 'block', opacity: 0, marginTop: '10%' });
+//         mainMn.animate({ opacity: 1, marginTop: '0%' }, 200);
 
-        mainMn.find('li').css({ marginTop: '20px', fontSize: '2em', opacity: 0 });
-        for (var i = 0; i < mnArr.length; i++) {
-            mnArr[i].delay(i * 50 + 100).animate({ marginTop: '0px', fontSize: '1.6em', opacity: 1 }, 160, 'linear');
-        }
-    });
+//         mainMn.find('li').css({ marginTop: '20px', fontSize: '2em', opacity: 0 });
+//         for (var i = 0; i < mnArr.length; i++) {
+//             mnArr[i].delay(i * 50 + 100).animate({ marginTop: '0px', fontSize: '1.6em', opacity: 1 }, 160, 'linear');
+//         }
+//     });
 
-    mainMn.find('.close').bind('click', hideMainMn);
-};
+//     mainMn.find('.close').bind('click', hideMainMn);
+// };
 
 var hideMainMn = function() {
     //hide menui
