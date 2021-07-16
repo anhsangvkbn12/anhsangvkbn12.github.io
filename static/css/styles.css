@@ -1593,6 +1593,13 @@ ul.tabs li.current {
         background-color: #d4f2f2;
         z-index: 1;
     }
+    .mapcon{
+        position: absolute;
+        width: 100vw;
+        height: 60%;
+        background-color: #d4f2f2;
+        z-index: 1;
+    }
     .map img{
         position: absolute;
         bottom: 0;
@@ -1759,12 +1766,6 @@ ul.tabs li.current {
     }
     .owl-dots .owl-dot span {
         background: #E4E9F2;
-    }
-    .modal-dialog {
-        margin:0;
-    }
-    .modal-content {
-        border: 0 ;
     }
     .header_back {
         position: relative;
