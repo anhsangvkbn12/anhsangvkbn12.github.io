@@ -14,297 +14,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<style>
 
-.owl-carousel .owl-item img {
-    border-radius: 15px;
-}
-.alCenter {
-    text-align: center;
-}
-#loader {
-    position: relative;
-    top: 25%;
-    left: 0 !important;
-    color: #fff;
-    font-size: 0.76em;
-}
-.loader1 {
-    width: 70vw;
-    margin-left: auto;
-    margin-right: auto;
-    height: 13px;
-    background: white;
-    border-radius: 100px;
-    overflow: hidden;
-}
-.loader1 .loader-bar {
-    display: block;
-    height: 100%;
-    background-size: 300% 100%;
-    width: 0;
-    animation: progress-animation 3s normal forwards;
-    background-color: #FA5252;
-}
-@keyframes progress-animation {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
-}
-.map {
-    position: absolute;
-    width: 100vw;
-    height: 60%;
-    background-color: #f3f5f9;
-    z-index: 1;
-}
-.content {
-    position: absolute;
-    width: 100vw;
-    height: 40%;
-    bottom: 0;
-    background-color: #8E9AB8;
-    z-index: 2;
-}
-.content-top{
-    position: relative;
-    width: 100%;
-    height: 25%;
-}
-.content-bottom{
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    height: 75%;
-    background: #FFFFFF;
-    box-shadow: 0px -4px 16px rgba(189, 189, 189, 0.25);
-    border-radius: 20px 20px 4px 4px;
-}
-.container-content-top{
-    position: absolute;
-    margin-left:  20px;
-    margin-top: 20px;
-    display:grid;
-    grid-template-columns: 48px 48px 48px 48px 48px;
-    grid-column-gap: 24px;
-}
-.circle-content{
-    display: flex;
-    border-radius:50%;
-   width: 48px;
-   height:48px;
-   background: #E4E9F2;
-    box-shadow: 0px 8px 8px rgba(24, 47, 80, 0.1);
-}
-.circle-content svg{
-    margin:auto;
-    width: 24px;
-    height: 24px;
-}
-.title-content-bottom{
-    position: relative;
-    padding-top: 16px;
-    padding-left: 24px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
-    display: flex;
-    align-items: center;
-    color: #283352;
-    margin-bottom: 8px;
-    height: 15%;
-}
-.parent-menu-content{
-    width: 100%;
-    height: 85%;
-    overflow-x: auto;
-}
-.menu-content-bottom {
-    width: 100%;
-    height: 45px;
-    display: flex;
-    align-items: center;
-}
-
-.container-menu-bottom{
-    margin-left: 24px;
-    margin-right: 24px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 20px auto 20px;
-}
-.text-container-menu{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.1px;
-    color: #283352;
-}
-.line-menu{
-    margin-left: 16px;
-    margin-right: 32px;
-    width: auto;
-    height: 2px;
-    display: grid;
-    grid-template-columns: 16px auto 32px ;
-    grid-column-gap:4px;
-    background-color:#E4E9F2;
-}
-.title-floor {
-    display: grid;
-    margin-left: 16px;
-    margin-right: 16px;
-    height: auto;
-    grid-template-columns: 24px auto 32px;
-    padding-left: 0;
-    padding-bottom: 8px;
-}
-.description-floor{
-    margin-left: 16px;
-    margin-right: 16px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.1px;
-    color: #39476A;
-    overflow-x: auto;
-}
-.descrip-content{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
-    color: #283352;
-}
-.current-circle{
-    background: #FFFFFF;
-}
-.current-circle svg{
-    fill:#FA5252;
-}
-.trangcon{
-    display: none;
-}
-.tintuc{
-    display: none;
-}
-.slider-tintuc {
-    position: relative;
-    display:flex;
-    width: 100%;
-    height: 100px;
-    background-color: aquamarine;
-}
-.child-tintuc{
-    height: 100px;
-    width: 50px;
-    background-color: gray;
-}
-.item {
-    background-color: antiquewhite;
-    height: 100px;
-    filter: drop-shadow(0px 8px 8px rgba(200, 220, 250, 0.1));
-    border-radius: 8px;
-}
-
-.owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span {
-    background:  #EC838A;
-}
-.owl-nav.disabled+.owl-dots {
-    margin-top: 24px;
-}
-.owl-dots .owl-dot span {
-    background: #E4E9F2;
-}
-.modal-dialog {
-    margin:0;
-}
-.modal-content {
-    border: 0 ;
-}
-.header_back {
-    position: relative;
-    height: 60px;
-    align-items: center;
-    margin-left: 16px;
-    margin-right: 16px;
-    padding-top:24px;
-    display: grid;
-    grid-template-columns: 32px auto 32px;
-    grid-column-gap: 4px;
-}
-.header-trangcon{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.1px;
-    color: #283352;
-}
-.content-trangcon{
-    background-color: #fafafa;
-
-}
-.content-top-trangcon{
-    position: relative;
-    width: 100%;
-    height: 20%;
-}
-.content-bottom-trangcon{
-    position: relative;
-    width: 100%;
-    height: 80%;
-    background: #FFFFFF;
-    box-shadow: 0px -4px 16px rgba(189, 189, 189, 0.25);
-    border-radius: 20px 20px 4px 4px;
-}
-.container-content-trangcon{
-    padding: 16px 0px 16px 16px;
-    display: flex;
-    overflow-x: auto;
-}
-.child-content-trangcon {
-    min-width: 72px;
-    height: 34px;
-    margin-right: 8px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background: #EDF1F7;
-    border-radius: 100px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 18px;
-    color: #7988A4;
-}
-.current-child-trangcon{
-    background: #E23C47;
-    color: #fff;
-}
-.container-content-trangcon::-webkit-scrollbar { 
-  width: 0 !important;
-  display: none; 
-}
-.content-toanha{
-    height: 80%;
-}
-.khoa_zoom{
-    height: 225%;
-    bottom: 0;
-
-}
-.end-content{
-    margin-bottom: 30px;
-}
-</style>
 </head>
 
 <body style="overflow: hidden;">
@@ -541,7 +251,7 @@
     <!----------------------end Modal A2-->
 
 
-  <div id="loader" class="alCenter" style="display: none;">
+  <div id="loader" class="alCenter" style="display: block;">
     <p>
         <img src="./static/images/map/logo.png" width="95px" height="120px" alt="">
     </p>
@@ -558,8 +268,10 @@
       <p style="margin-top:20px;font-size: 14px;line-height: 20px;text-align: center;color: #39476A;">Đang tải dữ liệu...</p>
   </div>
 
-  <div id="web" style="display: block;z-index:1000;overflow: hidden;width: 100%;height: 100%; "> 
-    <div class="map"></div>
+  <div id="web" style="display: none;z-index:1000;overflow: hidden;width: 100%;height: 100%; "> 
+    <div class="map">
+        <img src="./static/images/map/map_mobile.png" alt="">
+    </div>
     <div class="content">
         <div class="content-top">
             <div class="container-content-top">
@@ -674,7 +386,7 @@
             </div>
         </div>
         <!------------------------Khối phòng ban --------------------->
-        <div class="content-bottom content-map khoiphongban" >
+        <div class="content-bottom content-map khoiphongban" style="display: none;" >
             <div class="title-content-bottom main-menu ">Khối phòng ban</div>
             <div class="parent-menu-content main-menu">
                 <div class="menu-content-bottom menu-map" id="tckt">
