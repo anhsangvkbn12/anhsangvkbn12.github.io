@@ -54,20 +54,22 @@
         width: 100%;
     }
 }
+#web{
+    background-color: #d4f2f2;
+
+}
 .map, .mapcon {
     position: absolute;
     width: 100vw;
     height: 60%;
-    background-color: #d4f2f2;
     z-index: 1;
 }
-
-.map img{
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    height: auto;
+.map{
+    background: url('./static/images/map/map_mobile.png') no-repeat bottom ;
+    background-size: 100vw auto;
+    overflow: hidden;
 }
+
 .content {
     position: absolute;
     width: 100vw;
@@ -313,6 +315,92 @@
 .end-content{
     margin-bottom: 30px;
 }
+.over {
+    position: absolute;
+    left: 0;
+    bottom:0;
+    cursor: pointer;
+}
+.over .effect {
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+.over .effect span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 4px #fff solid;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    animation: 2s infinite aniWave;
+    margin-top: -25px;
+    margin-left: 5px;
+}
+.over .effect span:last-child {
+    animation-delay: 0.3s;
+}
+.over .pop {
+    position: absolute;
+    transform: scale(0);
+    margin-top: -96px;
+    margin-left: -30px;
+    transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+}
+.over .pop.active {
+    transform: scale(1);
+}
+.over:hover .pop {
+    transform: scale(1.1);
+}
+.pop img {
+    width: 64px;
+}
+.people {
+    z-index: 14;
+}
+.over:hover .typewriter {
+    display: block;
+}
+ .people:hover,
+ .people.active {
+    z-index: 16;
+}
+#floor-a1 {
+    margin-left: 37vw;
+    margin-bottom: 17.5vw;
+}
+#floor-a2 {
+    margin-left: 82vw;
+    margin-bottom: 50.5vw;
+}
+#floor-a3 {
+    margin-left: 72vw;
+    margin-bottom: 67.5vw;
+}
+#floor-mc {
+    margin-left: 85vw;
+    margin-bottom: 2.5vw;
+}
+#floor-hta1 {
+    margin-left: 27vw;
+    margin-bottom: 34.5vw;
+}
+#floor-ct {
+    margin-left: 53vw;
+    margin-bottom: 63.5vw;
+}
+#floor-b5 {
+    margin-left: 18vw;
+    margin-bottom: 54.5vw;
+}
+
+
 </style>
 </head>
 
@@ -568,8 +656,86 @@
   </div>
 
   <div id="web" style="display: none;z-index:1000;overflow: hidden;width: 100%;height: 100%; "> 
+    <!-------------------- Map Mobile ------------------------->
     <div class="map">
-        <img src="./static/images/map/map_mobile.png" alt="">
+        <div class="over people btnFile" id="floor-a1" >
+            <div class="typewriter">
+                <h6>Tòa nhà A1</h6>
+            </div>
+            <div class="pop">
+                <img src="./static/images/map/icon_place.svg">
+            </div>
+            <div class="effect" style="display: none;">
+                <span></span><span></span>
+            </div>
+        </div>
+        <div class="over people btnFile" id="floor-a2" >
+            <div class="typewriter">
+                <h6>Tòa nhà A2</h6>
+            </div>
+            <div class="pop">
+                <img src="./static/images/map/icon_place.svg">
+            </div>
+            <div class="effect" style="display: none;">
+                <span></span><span></span>
+            </div>
+        </div>
+        <div class="over people btnFile" id="floor-a3" >
+            <div class="typewriter">
+                <h6>Tòa nhà A3</h6>
+            </div>
+            <div class="pop">
+                <img src="./static/images/map/icon_place.svg">
+            </div>
+            <div class="effect" style="display: none;">
+                <span></span><span></span>
+            </div>
+        </div>
+        <div class="over people btnFile" id="floor-mc" >
+            <div class="typewriter">
+                <h6>Văn phòng một cửa</h6>
+            </div>
+            <div class="pop">
+                <img src="./static/images/map/icon_place.svg">
+            </div>
+            <div class="effect" style="display: none;">
+                <span></span><span></span>
+            </div>
+        </div>
+        <div class="over people btnFile" id="floor-hta1">
+            <div class="typewriter">
+                <h6>Hội trường A1</h6>
+            </div>
+            <div class="pop">
+                <img src="./static/images/map/icon_place.svg">
+            </div>
+            <div class="effect" style="display: none;">
+                <span></span><span></span>
+            </div>
+        </div>
+        <div class="over people btnFile" id="floor-ct" >
+            <div class="typewriter">
+                <h6>Căn tin</h6>
+            </div>
+            <div class="pop">
+                <img src="./static/images/map/icon_place.svg">
+            </div>
+            <div class="effect" style="display: none;">
+                <span></span><span></span>
+            </div>
+        </div>
+        <div class="over people btnFile" id="floor-b5">
+            <div class="typewriter">
+                <h6>Kí túc xá B5</h6>
+            </div>
+            <div class="pop">
+                <img src="./static/images/map/icon_place.svg">
+            </div>
+            <div class="effect" style="display: none;">
+                <span></span><span></span>
+            </div>
+        </div>
+
     </div>
     <div class="content">
         <div class="content-top">
@@ -813,7 +979,19 @@
   </div>
 </body>
 <script src="./static/js/owl.carousel.min.js "></script>
+<script src="./static/js/mobile_scripts.js "></script>
+
 <script>
+      $('#loader').show();
+    $('#web').hide();
+    window.onload = function() {
+        setTimeout(function(){ 
+            $('#web').show();
+            $('#loader').hide();
+            initPage();
+        }, 3000);
+
+    };
     $(document).ready(function () {
     var isMobile = false; //initiate as false
     if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
@@ -864,15 +1042,7 @@
 </script>
 <script>
     var current_zoom=0;
-  $('#loader').show();
-    $('#web').hide();
-    window.onload = function() {
-        setTimeout(function(){ 
-            $('#web').show();
-            $('#loader').hide();
-        }, 3000);
 
-    };
     
     var id_floor=null;
     $('.menu-map').click(function() {
