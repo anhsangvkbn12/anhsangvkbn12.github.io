@@ -250,68 +250,7 @@
     grid-template-columns: 32px auto 32px;
     grid-column-gap: 4px;
 }
-.header-trangcon{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.1px;
-    color: #283352;
-}
-.content-trangcon{
-    background-color: #fafafa;
 
-}
-.content-top-trangcon{
-    position: relative;
-    width: 100%;
-    height: 20%;
-}
-.content-bottom-trangcon{
-    position: relative;
-    width: 100%;
-    height: 80%;
-    background: #FFFFFF;
-    box-shadow: 0px -4px 16px rgba(189, 189, 189, 0.25);
-    border-radius: 20px 20px 4px 4px;
-}
-.container-content-trangcon{
-    padding: 16px 0px 16px 16px;
-    display: flex;
-    overflow-x: auto;
-}
-.child-content-trangcon {
-    min-width: 72px;
-    height: 34px;
-    margin-right: 8px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background: #EDF1F7;
-    border-radius: 100px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 18px;
-    color: #7988A4;
-}
-.current-child-trangcon{
-    background: #E23C47;
-    color: #fff;
-}
-.container-content-trangcon::-webkit-scrollbar { 
-  width: 0 !important;
-  display: none; 
-}
-.content-toanha{
-    height: 80%;
-}
-.khoa_zoom{
-    height: 225%;
-    bottom: 0;
-
-}
 .end-content{
     margin-bottom: 30px;
 }
@@ -407,236 +346,8 @@
 <body style="overflow: hidden;">
 
     <!---------------Tòa Nhà A2----------------------->
-    <div class="modal fade" id="modal_a2" role="dialog" style="width:100%;height:100%;background-color: #F3F5F9;overflow: hidden;">
-        <div class="modal-dialog" style="    width: 100vw;
-        overflow: hidden;
-        height: 100%;
-        top: 0;
-        background-color: #F3F5F9;">
-            <!-- Modal content-->
-            <div class="modal-content" style="width:100%;height:100%;position:absolute">
-                <div class="mapcon">
-                    <div class="header_back">
-                        <div class="icon_back">
-                            <a href="" rel="modal:close">
-                                <img  src="./static/images/home/home-btn-back.svg" alt="back" width="24px" height="24px">
-                            </a>
-                        </div>
-                        <div class="header-trangcon">Tòa Nhà A2</div>
-                        <img src="./static/images/home/btn-search.svg" alt="">
-                    </div>
-                </div>
-                <div class="content content-trangcon">
-                    <div class="content-top-trangcon">
-                        <div class="container-content-trangcon">
-                           <div class="child-content-trangcon current-child-trangcon" id="tangg">Tầng G</div>
-                           <div class="child-content-trangcon" id="tang1">Tầng 1</div>
-                           <div class="child-content-trangcon" id="tang2">Tầng 2</div>
-                           <div class="child-content-trangcon">Tầng 3</div>
-                           <div class="child-content-trangcon">Tầng 4</div>
-                           <div class="child-content-trangcon">Tầng 5</div>
-                           <div class="child-content-trangcon">Tầng 6</div>
-                           <div class="child-content-trangcon">Tầng 6</div>
-                           <div class="child-content-trangcon">Tầng 8</div>
-                           <div class="child-content-trangcon">Tầng 9</div>
-                           <div class="child-content-trangcon ">Tầng 10</div>
-                        </div>
-                    </div>
-                    <!-------------------------- Tầng G------------------------ -->
-                    <div class="content-bottom content-toanha tangg" >
-                        <div class="title-content-bottom main-menu ">Tầng G</div>
-                        <div class="parent-menu-content main-menu ">
-                            <div class="menu-content-bottom menu_toanha" id="khoa_cntt1" >
-                                <div class="container-menu-bottom">
-                                    <div class="icon-container-menu"></div>
-                                    <div class="text-container-menu">Khoa Công Nghệ Thông Tin 1</div>
-                                    <img src="./static/images/map/icon/btn-next.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="line-menu"></div>
-                            <div class="menu-content-bottom menu_toanha" id="khoa_attt1">
-                                <div class="container-menu-bottom">
-                                    <div class="icon-container-menu"></div>
-                                    <div class="text-container-menu">Khoa An Toàn Thông Tin 1</div>
-                                    <img src="./static/images/map/icon/btn-next.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="line-menu"></div>
-                            <div class="menu-content-bottom menu_toanha " id="khoa_vt1">
-                                <div class="container-menu-bottom">
-                                    <div class="icon-container-menu"></div>
-                                    <div class="text-container-menu">Khoa Viễn Thông 1</div>
-                                    <img src="./static/images/map/icon/btn-next.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="line-menu"></div>
-
-                            <div class="menu-content-bottom menu_toanha">
-                                <div class="container-menu-bottom">
-                                    <div class="icon-container-menu"></div>
-                                    <div class="text-container-menu">Khoa</div>
-                                    <img src="./static/images/map/icon/btn-next.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="line-menu"></div>
-                            <div class="menu-content-bottom menu_toanha">
-                                <div class="container-menu-bottom">
-                                    <div class="icon-container-menu"></div>
-                                    <div class="text-container-menu">Khoa</div>
-                                    <img src="./static/images/map/icon/btn-next.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="line-menu"></div>
-                            <div class="menu-content-bottom menu_toanha">
-                                <div class="container-menu-bottom">
-                                    <div class="icon-container-menu"></div>
-                                    <div class="text-container-menu">Khoa</div>
-                                    <img src="./static/images/map/icon/btn-next.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="line-menu end-content" ></div>
-
-                        </div>
-                    </div>
-                    <div class="content-bottom content-toanha trangcon khoa_cntt1" >
-                        <div class="title-content-bottom title-floor"> 
-                            <img class="back-btn-khoa" src="./static/images/map/icon/btn-back.svg" alt="">
-                            <div class="descrip-content">
-                                Khoa Công Nghệ Thông Tin 1
-                            </div>
-                            <img class="next-btn-khoa khoa_cntt1" src="./static/images/map/icon/btn-zoom.svg" alt="">
-                        </div>
-                        <div  class="parent-menu-content">
-                            <div class="description-floor end-content">
-                                Toà nhà A2 là toà Chức năng:
-                                Khoa Công nghệ thông tin 1 là đơn vị đào tạo trực thuộc Học viện Công nghệ Bưu chính Viễn thông (dưới đây gọi tắt là Học viện) có chức năng đào tạo và nghiên cứu khoa học thuộc lĩnh vực Công nghệ thông tin (Công nghệ thông tin, Công nghệ phần mềm, Hệ thống thông tin, Khoa học máy tính, Kỹ thuật máy tính và An toàn thông tin).
-                                Nhiệm vụ:
-                                Quản lý, tổ chức giảng dạy các môn học, học phần do khoa quản lý cho các hệ (hình thức đào tạo và trình độ đào tạo) đào tạo của Học viện;
-                                Lập kế hoạch và tổ chức thực hiện các hoạt động giáo dục đào tạo theo kế hoạch chung của Học viện;
-                                Lập kế hoạch và tổ chức thực hiện các hoạt động khoa học và công nghệ, hợp tác quốc tế; hợp tác với các tổ chức khoa học và công nghệ, cơ sở sản xuất, kinh doanh liên quan đến ngành nghề đào tạo và huy động sự tham gia của doanh nghiệp và quá trình đào tạo của khoa; lớn nhất PTIT gồm 9 tầng với 15 phòng ban, khoa và 24 phòng học hiện đại!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-bottom content-toanha trangcon khoa_attt1" >
-                        <div class="title-content-bottom title-floor"> 
-                            <img class="back-btn-khoa" src="./static/images/map/icon/btn-back.svg" alt="">
-                            <div class="descrip-content">
-                                Khoa An Toàn Thông Tin 1
-                            </div>
-                            <img class="next-btn-khoa khoa_cntt1" src="./static/images/map/icon/btn-zoom.svg" alt="">
-                        </div>
-                        <div  class="parent-menu-content">
-                            <div class="description-floor end-content">
-                                Toà nhà A2 là toà Chức năng:
-                                Khoa Công nghệ thông tin 1 là đơn vị đào tạo trực thuộc Học viện Công nghệ Bưu chính Viễn thông (dưới đây gọi tắt là Học viện) có chức năng đào tạo và nghiên cứu khoa học thuộc lĩnh vực Công nghệ thông tin (Công nghệ thông tin, Công nghệ phần mềm, Hệ thống thông tin, Khoa học máy tính, Kỹ thuật máy tính và An toàn thông tin).
-                                Nhiệm vụ:
-                                Quản lý, tổ chức giảng dạy các môn học, học phần do khoa quản lý cho các hệ (hình thức đào tạo và trình độ đào tạo) đào tạo của Học viện;
-                                Lập kế hoạch và tổ chức thực hiện các hoạt động giáo dục đào tạo theo kế hoạch chung của Học viện;
-                                Lập kế hoạch và tổ chức thực hiện các hoạt động khoa học và công nghệ, hợp tác quốc tế; hợp tác với các tổ chức khoa học và công nghệ, cơ sở sản xuất, kinh doanh liên quan đến ngành nghề đào tạo và huy động sự tham gia của doanh nghiệp và quá trình đào tạo của khoa; lớn nhất PTIT gồm 9 tầng với 15 phòng ban, khoa và 24 phòng học hiện đại!
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- -----------------------Tầng 1---------------- -->
-                    <div class="content-bottom content-toanha trangcon tang1" >
-                        <div class="title-content-bottom main-menu ">Tầng 1</div>
-                        <div class="parent-menu-content main-menu ">
-                            <div class="menu-content-bottom menu_toanha" id="phong_ngv" >
-                                <div class="container-menu-bottom">
-                                    <div class="icon-container-menu"></div>
-                                    <div class="text-container-menu">Phòng Nghỉ giáo viên</div>
-                                    <img src="./static/images/map/icon/btn-next.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="line-menu"></div>
-                            <div class="menu-content-bottom menu_toanha" id="phong_101">
-                                <div class="container-menu-bottom">
-                                    <div class="icon-container-menu"></div>
-                                    <div class="text-container-menu">Phòng 101</div>
-                                    <img src="./static/images/map/icon/btn-next.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="line-menu"></div>
-                            <div class="menu-content-bottom menu_toanha " id="phong_102">
-                                <div class="container-menu-bottom">
-                                    <div class="icon-container-menu"></div>
-                                    <div class="text-container-menu">Phòng 102</div>
-                                    <img src="./static/images/map/icon/btn-next.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="line-menu"></div>
-
-                            <div class="menu-content-bottom menu_toanha">
-                                <div class="container-menu-bottom">
-                                    <div class="icon-container-menu"></div>
-                                    <div class="text-container-menu">Phòng</div>
-                                    <img src="./static/images/map/icon/btn-next.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="line-menu"></div>
-                            <div class="menu-content-bottom menu_toanha">
-                                <div class="container-menu-bottom">
-                                    <div class="icon-container-menu"></div>
-                                    <div class="text-container-menu">Phòng</div>
-                                    <img src="./static/images/map/icon/btn-next.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="line-menu"></div>
-
-                            <div class="menu-content-bottom menu_toanha">
-                                <div class="container-menu-bottom">
-                                    <div class="icon-container-menu"></div>
-                                    <div class="text-container-menu">Phòng</div>
-                                    <img src="./static/images/map/icon/btn-next.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="line-menu end-content"></div>
-                        </div>
-                    </div>
-                    <div class="content-bottom content-toanha trangcon phong_ngv" >
-                        <div class="title-content-bottom title-floor"> 
-                            <img class="back-btn-khoa" src="./static/images/map/icon/btn-back.svg" alt="">
-                            <div class="descrip-content">
-                                Phòng Nghỉ Giáo Viên
-                            </div>
-                            <img class="next-btn-khoa phong_ngv" src="./static/images/map/icon/btn-zoom.svg" alt="">
-                        </div>
-                        <div  class="parent-menu-content">
-                            <div class="description-floor end-content">
-                                Toà nhà A2 là toà Chức năng:
-                                Khoa Công nghệ thông tin 1 là đơn vị đào tạo trực thuộc Học viện Công nghệ Bưu chính Viễn thông (dưới đây gọi tắt là Học viện) có chức năng đào tạo và nghiên cứu khoa học thuộc lĩnh vực Công nghệ thông tin (Công nghệ thông tin, Công nghệ phần mềm, Hệ thống thông tin, Khoa học máy tính, Kỹ thuật máy tính và An toàn thông tin).
-                                Nhiệm vụ:
-                                Quản lý, tổ chức giảng dạy các môn học, học phần do khoa quản lý cho các hệ (hình thức đào tạo và trình độ đào tạo) đào tạo của Học viện;
-                                Lập kế hoạch và tổ chức thực hiện các hoạt động giáo dục đào tạo theo kế hoạch chung của Học viện;
-                                Lập kế hoạch và tổ chức thực hiện các hoạt động khoa học và công nghệ, hợp tác quốc tế; hợp tác với các tổ chức khoa học và công nghệ, cơ sở sản xuất, kinh doanh liên quan đến ngành nghề đào tạo và huy động sự tham gia của doanh nghiệp và quá trình đào tạo của khoa; lớn nhất PTIT gồm 9 tầng với 15 phòng ban, khoa và 24 phòng học hiện đại!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-bottom content-toanha trangcon khoa_attt1" >
-                        <div class="title-content-bottom title-floor"> 
-                            <img class="back-btn-khoa" src="./static/images/map/icon/btn-back.svg" alt="">
-                            <div class="descrip-content">
-                                Khoa An Toàn Thông Tin 1
-                            </div>
-                            <img class="next-btn-khoa khoa_cntt1" src="./static/images/map/icon/btn-zoom.svg" alt="">
-                        </div>
-                        <div  class="parent-menu-content">
-                            <div class="description-floor end-content">
-                                Toà nhà A2 là toà Chức năng:
-                                Khoa Công nghệ thông tin 1 là đơn vị đào tạo trực thuộc Học viện Công nghệ Bưu chính Viễn thông (dưới đây gọi tắt là Học viện) có chức năng đào tạo và nghiên cứu khoa học thuộc lĩnh vực Công nghệ thông tin (Công nghệ thông tin, Công nghệ phần mềm, Hệ thống thông tin, Khoa học máy tính, Kỹ thuật máy tính và An toàn thông tin).
-                                Nhiệm vụ:
-                                Quản lý, tổ chức giảng dạy các môn học, học phần do khoa quản lý cho các hệ (hình thức đào tạo và trình độ đào tạo) đào tạo của Học viện;
-                                Lập kế hoạch và tổ chức thực hiện các hoạt động giáo dục đào tạo theo kế hoạch chung của Học viện;
-                                Lập kế hoạch và tổ chức thực hiện các hoạt động khoa học và công nghệ, hợp tác quốc tế; hợp tác với các tổ chức khoa học và công nghệ, cơ sở sản xuất, kinh doanh liên quan đến ngành nghề đào tạo và huy động sự tham gia của doanh nghiệp và quá trình đào tạo của khoa; lớn nhất PTIT gồm 9 tầng với 15 phòng ban, khoa và 24 phòng học hiện đại!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!----------------------end Modal A2-->
-
+    <iframe style="width:100vw;height:100vh;z-index:100;display: none;" id="modal_a2" src="./a2_mobile.html" title="Tòa nhà A2">
+    </iframe>
 
   <div id="loader" class="alCenter" style="display: block;">
     <p>
@@ -1018,21 +729,7 @@
 
   })
 
-   var id_tang=null;
-   let list_tang=document.querySelectorAll(".child-content-trangcon");
-   for (let i=0;i<list_tang.length;i++){
-     list_tang[i].onclick=function(){
-        $('.content-toanha').css( {'display': 'none'});
-        id_tang='.'+$(this).attr('id');
-        console.log(id_tang)
-        $(id_tang).css( {'display': 'block'});
-       let j=0;
-       while(j<list_tang.length){
-         list_tang[j++].className='child-content-trangcon';
-       }
-       list_tang[i].className='child-content-trangcon current-child-trangcon';
-     }
-   }
+
   var id_menu=null;
   let list_circle=document.querySelectorAll(".circle-content");
    for (let i=0;i<list_circle.length;i++){
@@ -1070,47 +767,16 @@
             $('.'+id_floor).css( {'display': 'block'});
         }, 200);
     });
-    var id_khoa=null;
-    
-    $('.menu_toanha').click(function() {
-        $(this).css('background-color','#FEF6F7');
-        id_khoa=$(this).attr('id');
-        console.log(id_khoa)
-        setTimeout(function(){ 
-            $('.menu_toanha').css('background-color','#FFF');
-            $('.'+id_khoa).css( {'display': 'block'});
-        }, 200);
-    });
-
 
     $('.back-btn-map').click(function() {
         console.log(id_floor)
         $('.'+id_floor).css( {'display': 'none'});
     })
     $('.next-btn-map').click(function() {
-        $('#modal_'+id_floor).modal('show')
+        $('#modal_'+id_floor).css( {'display': 'block'});
+        $('#web').css( {'display': 'none'});
     })
     
-    $('.next-btn-khoa').click(function() {
-        if(current_zoom==0){
-            current_zoom=1;
-        }
-        else{
-            current_zoom=0;
-        }
-        $(this).parent().parent().toggleClass( "khoa_zoom" );
-    })
-    
-    $('.back-btn-khoa').click(function() {
-        console.log(current_zoom)
-        if(current_zoom==1){
-            $(this).parent().parent().toggleClass( "khoa_zoom" );
-            current_zoom=0;
-        }else{
-            $(this).parent().parent().css( {'display': 'none'});
-        }
-        
-    })
 
 </script>
 </html>
