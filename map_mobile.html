@@ -658,6 +658,15 @@
   <div id="web" style="display: none;z-index:1000;overflow: hidden;width: 100%;height: 100%; "> 
     <!-------------------- Map Mobile ------------------------->
     <div class="map">
+        <div class="header_back">
+            <div class="icon_back">
+                <a href="./mobile.html">
+                    <img  src="./static/images/home/home-btn-back.svg" alt="back" width="24px" height="24px">
+                </a>
+            </div>
+            <div></div>
+            <img src="./static/images/home/btn-search.svg" alt="">
+        </div>
         <div class="over people btnFile" id="floor-a1" >
             <div class="typewriter">
                 <h6>Tòa nhà A1</h6>
@@ -1042,14 +1051,20 @@
 </script>
 <script>
     var current_zoom=0;
-
-    
     var id_floor=null;
+    $('.pop').click(function() {
+        $('.'+id_floor).css( {'display': 'none'});
+        id_floor=$(this).parent().attr('id');
+        id_floor=id_floor.slice(6,id_floor.length);
+        console.log(id_floor)
+        $('.menu-map').css('background-color','#FFF');
+        $('.'+id_floor).css( {'display': 'block'});
+    });
+
     $('.menu-map').click(function() {
         $(this).css('background-color','#FEF6F7');
         id_floor=$(this).attr('id');
         console.log(id_floor)
-
         setTimeout(function(){ 
             $('.menu-map').css('background-color','#FFF');
             $('.'+id_floor).css( {'display': 'block'});
